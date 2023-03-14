@@ -25,6 +25,12 @@
   .ti-user{
     margin-right: 5px;
   }
+  .ti-search{
+    margin-right: 5px;
+  }
+  .ti-angle-double-right{
+    margin-right: 5px;
+  }
 
   address {
     font-style: normal;
@@ -91,7 +97,15 @@
     border-radius: 8px;
   }
   
-  
+  .header{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background: #ffff;
+  }
   .user-welcome {
     float: right;
     margin-top: 12px;
@@ -153,6 +167,7 @@
   #navbar-menu {
     width: 100%;
     background: #1266DD;
+    
   }
   #navbar-menu .container-menu {
     width: 1120px;
@@ -188,6 +203,7 @@
     margin-bottom: 20px;
     height: 100%;
     border-radius: 8px;
+    margin-top: 110px;
 }
 #filter-top .filter-body {
   display: flex;
@@ -229,6 +245,7 @@
 
 .footer-shop-info {
   padding: 1.875rem;
+  background-color: #fff;
 }
 .footer-shop-info {
   padding: calc(1.3125rem + 0.75vw);
@@ -262,6 +279,9 @@
 .footer-shop-info .info-list ul li a {
   text-decoration: none;
   color: #626262;
+}
+.footer-shop-info .info-list ul li a:hover {
+  color: rgb(12, 12, 233);
 }
 .footer-subscribe-email {
   border: 1px solid rgba(0,0,0,.082);
@@ -324,7 +344,7 @@
 }
 .menu-navigation {
   margin: 0;
-  z-index: 1;
+ 
 }
 .menu-navigation .vertical-nav-header {
   font-size: .875rem;
@@ -383,6 +403,7 @@
 }
 .content{
   margin-left: 100px;
+  
 }
 .post-sort {
   margin-bottom: 10px;
@@ -410,12 +431,23 @@
   padding-right: 20px;
 }
 .post-listing .post-item.vipnoibat figure {
-  width: 100%;
+  width: 280px;
   height: 240px;
- 
+  display: inline-block;
 }
+
+.post-listing .post-item.vipnoibat figure .lazy_done {
+  width: 280px; 
+  height: 240px; 
+  margin-top: 10px; 
+  border-radius: 8px;
+  margin-left: 50px;
+  
+}
+
 .post-listing .post-item .post-meta {
   margin-left: 15px;
+  display: inline-block;
 }
 .post-listing .post-item .images-number {
   position: absolute;
@@ -427,10 +459,7 @@
   border-radius: 3px;
   font-size: .9rem;
 }
-.post-listing .post-item .post-meta {
-  margin-left: 15px;
-  position: relative;
-}
+
 .post-listing .post-item .post-title {
   font-size: 1rem;
   line-height: 1.5;
@@ -505,12 +534,44 @@ element.style {
   margin-left: 5px;
   float: right;
 }
+.post-listing .post-item .btn-quick-zalo:hover{
+  color:#fff;
+  background-color:#1266dd ;
+}
 .post-listing .post-item.vipnoibat figure {
     width: 280px;
     height: 240px;
 }
-
-
+.social-links a>i {
+  margin-right: 10px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+.social-links .social-fb i {
+  background-image: url(/assets/img/icon/fb-icon.png);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.social-links .social-youtube{
+  background-image: url(/assets/img/icon/youtube.png);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.social-links .social-zalo{
+  background-image: url(/assets/img/icon/zalo.png);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.social-links .social-twitter{
+  background-image: url(/assets/img/icon/twitter.webp);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 
 
