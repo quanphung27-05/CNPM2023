@@ -4,235 +4,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     
     <title>Find roomate</title>
   </head>
-  <body class="canva">
-    <script src="js/index.js"></script>
-    <script src="js/zoom.js"></script>
-    <div id="webpage">
-      <div class="header">
-        <div class="container container-header clearfix">
-          <a id="top-logo" href="#" title="tìm bạn trọ">tìm bạn trọ</a>
-          <div class="user-welcome clearfix js-reload-html-header">
-            <a rel="nofollow" class="btn" href="#"> <i class="ti-heart"></i> Yêu thích</a>
-            <a rel="nofollow" class="btn" href="#">
-              <i class="ti-user"></i> Thông tin tài khoản </a>
-               <a rel="nofollow" class="btn btn-add-post" href="#">Đăng tin mới </a>
-          </div>
-        </div>
-        <nav id="navbar-menu">
-          <ul id="menu-main-menu" class="container-menu clearfix level-1">
-            <li class="navbar_item clearfix active current-menu-item">
-              <a href="#">Trang chủ</a>
-            </li>
-            <li class="navbar_item clearfix ">
-              <a href="#">Cho thuê phòng trọ</a>
-            </li>
-            <li class="navbar_item clearfix ">
-              <a href="#">Nhà cho thuê</a>
-            </li>
-            <li class="navbar_item clearfix ">
-              <a href="#">Cho thuê căn hộ</a>
-            </li>
-            <li class="navbar_item clearfix ">
-              <a href="#">Cho thuê mặt bằng</a>
-            </li>
-            <li class="navbar_item clearfix ">
-              <a href="#">Tìm người ở ghép</a>
-            </li>
-            <li class="navbar_item clearfix ">
-              <a href="#">Blog</a>
-            </li>
-            <li class="navbar_item clearfix ">
-              <a href="#">Hướng dẫn</a>
-            </li>
-            <li class="navbar_item clearfix ">
-              <a href="#">Nạp tiền</a>
-            </li>
-            <li class="navbar_item clearfix ">
-              <a href="#">Bảng giá</a>
-            </li>
-          </ul>
-        </nav>
-        
-      </div>
-      <section id="filter-top">
-        <div class="filter-body">
-          <input type="text" class="filter-item post-estate-type" placeholder = "Bạn tìm phòng trọ hay nhà trọ?">
-          <input type="text" class="filter-item location" placeholder = "Địa chỉ bạn cần tìm">
-          <input type="text" class="filter-item post-estate-type" placeholder = "Diện tích phòng bạn cần tìm">
-          <input type="text" class="filter-item post-estate-type" placeholder = "Mức giá bạn tìm?">
-          <div class="filter-item submit">
-            <span><ti class="ti-search"></ti></span>
-            <span>Tìm kiếm</span>
-          </div>
-        </div>
-        
-      </section>
+  <body>
+    <!-- <script src="js/index.js"></script>
+    <script src="js/zoom.js"></script> -->
+    
+    <div id="main">
+      <!-- Begin: Header -->
+      <div id="header" class="dark-purple">
 
+        <!-- Logo -->
+        <div class="container clearfix">
+          <a id="top-logo" href="#" title="tìm bạn trọ">tìm bạn trọ</a>
+          <div class="user-welcome clearfix">
+            <a rel="nofollow" class="btn btn-add-post light-red" href="#">Đăng tin mới</a>
+            <a rel="nofollow" class="btn light-blue" href="#"><i class="ti-user mr-4"></i>Thông tin tài khoản</a>
+            <a rel="nofollow" class="btn light-blue" href="#"> <i class="ti-heart mr-4"></i> Yêu thích</a>
+          </div>
+        </div>
+
+        <!-- Begin: Nav -->
+        <ul id="nav" class="light-purple">
+          <li><a href="#">Trang chủ</a></li>
+          <li>
+            <a href="#">
+              Hoạt Động
+              <i class="nav-angle-down ti-angle-down"></i>
+            </a>
+            <ul class="subnav">
+              <li><a href="#">Cho thuê phòng trọ</a></li>
+              <li><a href="#">Nhà cho thuê</a></li>
+              <li><a href="#">Cho thuê căn hộ</a></li>
+              <li><a href="#">Cho thuê mặt bằng</a></li>
+              <li><a href="#">Tìm người ở ghép</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Blog</a></li>
+          <li>
+            <a href="#">
+              Hỗ trợ
+              <i class="nav-angle-down ti-angle-down"></i>
+            </a>
+            <ul class="subnav">
+              <li><a href="#">Nạp tiền</a></li>
+              <li><a href="#">Bảng giá</a></li>
+            </ul>
+          </li>
+
+          <!-- Filter -->
+          <section id="filter-top">
+            <!-- <div class="filter-body">
+              <input type="text" class="filter-item" placeholder = "Bạn tìm phòng trọ hay nhà trọ?"> -->
+              <!-- <input type="text" class="filter-item" placeholder = "Địa chỉ bạn cần tìm"> -->
+              <!-- <input type="text" class="filter-item" placeholder = "Diện tích phòng bạn cần tìm"> -->
+              <!-- <input type="text" class="filter-item" placeholder = "Mức giá bạn tìm?">
+            </div> -->
+            <div class="submit">
+              <i class="ti-search mr-4"></i>
+              Tìm kiếm
+            </div>
+          </section>
+        </ul>
+        <!-- End: Nav -->
+      </div>
+      <!-- End: Header -->
+
+      <!-- Begin: Content -->
       <div class="content">
-        <section class="e-section-first e-column">
-          <div class="side-left column-md-1-4">
+        <section class="e-column">
+          <!-- Begin: Left sidebar -->
+          <div class="column-md-1-5">
             <div class="menu-navigation">
-              <div class="vertical-nav-header">
-                <span>Danh mục</span>
-              </div>
+              <div class="vertical-nav-header light-red"><span>Danh mục</span></div>
               <ul class="u-vertial">
                 <li>
                   <a href="#">
-                    <i class="ti-angle-double-right"></i>
-                    <span class="menu-title"> Tìm phòng trọ</span>
+                    <i class="ti-angle-double-right mr-4"></i>
+                    <span class="">Tìm phòng trọ</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="ti-angle-double-right"></i>
-                    <span class="menu-title">Tìm nhà trọ</span>
+                    <i class="ti-angle-double-right mr-4"></i>
+                    <span class="">Tìm nhà trọ</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="ti-angle-double-right"></i>
-                    <span class="menu-title">Tìm người ở ghép</span>
+                    <i class="ti-angle-double-right mr-4"></i>
+                    <span class="">Tìm người ở ghép</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="ti-angle-double-right"></i>
-                    <span class="menu-title">Tìm nhà thuê nguyên căn</span>
+                    <i class="ti-angle-double-right mr-4"></i>
+                    <span class="">Tìm nhà thuê nguyên căn</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="ti-angle-double-right"></i>
-                    <span class="menu-title">Tìm mặt bằng cho thuê</span>
+                    <i class="ti-angle-double-right mr-4"></i>
+                    <span class="">Tìm mặt bằng cho thuê</span>
                   </a>
                 </li>
               </ul>
-            </div>
-            
+            </div>  
           </div>
-          <div class="e-right column-md-3-4 off-phone">
-            <div class="section section-post-listing">
-              <div class="section-header">
-                <span class="section-title">Danh sách tin đăng</span>
-              </div>
+          <!-- End: Left sidebar -->
+
+          <!-- Begin: Main content -->
+          <div class="column-md-3-5">
+            <div class="section">
+              <!-- Title -->
+              <div class="section-header"><span class="section-title">Danh sách tin đăng</span></div>
+              <!-- Sort -->
               <div class="post-sort">
                 <span>Sắp xếp: </span>
                 <a class="active" href="#">Mặc định</a>
                 <a class="" href="#">Mới nhất</a>
                 <a class="" href="#">Phổ biến</a>
               </div>
-              <ul class="post-listing">
-                <li class="post-item style-4 clearfix tin-vip vipnoibat" style="border-color: #E13427;" post-id="166258">
-                  <figure class="post-thumb">
-                    <a class="clearfix" href="#">
-                      <img class="lazy_done" src="./assets/img/slider/slider1.jpg" alt="PHÒNG TRỌ ĐỐI DIỆN KS 5 SAO TÂN SƠN NHẤT MỚI XÂY RẤT ĐẸP - GẦN CÔNG VIÊN HOÀNG VĂN THỤ" style="width: 500px; height: 240px; margin-top: 10px; border-radius: 8px;margin-left: 50px;">
-                    </a>
-                  </figure>
-                  <div class="post-meta">
-                    <h3 class="post-title">
-                      <a style="color: #E13427;" href="#">
-                        <span class="star star-5"></span> Phòng trọ Thành Thái</a>
-                    </h3>
-                    <div class="meta-row clearfix">
-                      <span class="post-price">5 triệu/tháng</span>
-                      <span class="post-acreage">25m²</span>
-                      <span class="post-location">
-                        <a href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
-                      </span>
-                      <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
+
+              <div class="post-listing">
+                <div class="post-item clearfix vipnoibat">
+                  <div class="post-place">
+                    <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
+                    <div class="post-meta">
+                      <h2 class="post-title"><a href="#">Phòng trọ Thành Thái</a></h2>
+                      <div class="meta-row clearfix">
+                        <span class="post-price">5 triệu/tháng</span>
+                        <span class="post-acreage">25m²</span>
+                        <span class="post-location"><a href="#">Quận Phú Nhuận, Hồ Chí Minh</a></span>
+                        <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
+                        <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
+                        <div class="post-author">
+                          <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="">
+                          <span class="">phungquan2003</span>
+                        </div>
+                        <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
+                     </div>
                     </div>
-                    <div class="meta-row clearfix">
-                      <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
-                    </div>
-                    <div class="meta-row clearfix">
-                      <div class="post-author">
-                        <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="member-img">
-                        <span class="author-name">phungquan2003</span>
-                      </div>
-                      <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
-                      
-                   </div>
                   </div>
-                </li>
-                <li class="post-item style-4 clearfix tin-vip vipnoibat" style="border-color: #E13427;" post-id="166258">
-                  <figure class="post-thumb">
-                    <a class="clearfix" href="#">
-                      <img class="lazy_done" src="./assets/img/slider/slider1.jpg" alt="PHÒNG TRỌ ĐỐI DIỆN KS 5 SAO TÂN SƠN NHẤT MỚI XÂY RẤT ĐẸP - GẦN CÔNG VIÊN HOÀNG VĂN THỤ" style="width: 500px; height: 240px; margin-top: 10px; border-radius: 8px;margin-left: 50px;">
-                    </a>
-                  </figure>
-                  <div class="post-meta">
-                    <h3 class="post-title">
-                      <a style="color: #E13427;" href="#">
-                        <span class="star star-5"></span> Phòng trọ Thành Thái</a>
-                    </h3>
-                    <div class="meta-row clearfix">
-                      <span class="post-price">5 triệu/tháng</span>
-                      <span class="post-acreage">25m²</span>
-                      <span class="post-location">
-                        <a href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
-                      </span>
-                      <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
-                    </div>
-                    <div class="meta-row clearfix">
-                      <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
-                    </div>
-                    <div class="meta-row clearfix">
-                      <div class="post-author">
-                        <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="member-img">
-                        <span class="author-name">phungquan2003</span>
+                </div>
+                <div class="post-listing">
+                  <div class="post-item clearfix vipnoibat">
+                    <div class="post-place">
+                      <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
+                      <div class="post-meta">
+                        <h2 class="post-title"><a href="#">Phòng trọ Thành Thái</a></h2>
+                        <div class="meta-row clearfix">
+                          <span class="post-price">5 triệu/tháng</span>
+                          <span class="post-acreage">25m²</span>
+                          <span class="post-location"><a href="#">Quận Phú Nhuận, Hồ Chí Minh</a></span>
+                          <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
+                          <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
+                          <div class="post-author">
+                            <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="">
+                            <span class="">phungquan2003</span>
+                          </div>
+                          <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
+                       </div>
                       </div>
-                      <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
-                      
-                   </div>
-                  </div>
-                </li>
-                <li class="post-item style-4 clearfix tin-vip vipnoibat" style="border-color: #E13427;" post-id="166258">
-                  <figure class="post-thumb">
-                    <a class="clearfix" href="#">
-                      <img class="lazy_done" src="./assets/img/slider/slider1.jpg" alt="PHÒNG TRỌ ĐỐI DIỆN KS 5 SAO TÂN SƠN NHẤT MỚI XÂY RẤT ĐẸP - GẦN CÔNG VIÊN HOÀNG VĂN THỤ" style="width: 500px; height: 240px; margin-top: 10px; border-radius: 8px;margin-left: 50px;">
-                    </a>
-                  </figure>
-                  <div class="post-meta">
-                    <h3 class="post-title">
-                      <a style="color: #E13427;" href="#">
-                        <span class="star star-5"></span> Phòng trọ Thành Thái</a>
-                    </h3>
-                    <div class="meta-row clearfix">
-                      <span class="post-price">5 triệu/tháng</span>
-                      <span class="post-acreage">25m²</span>
-                      <span class="post-location">
-                        <a href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
-                      </span>
-                      <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
                     </div>
-                    <div class="meta-row clearfix">
-                      <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
-                    </div>
-                    <div class="meta-row clearfix">
-                      <div class="post-author">
-                        <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="member-img">
-                        <span class="author-name">phungquan2003</span>
-                      </div>
-                      <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
-                      
-                   </div>
                   </div>
-                </li>
-              </ul>
+                </div>
             </div>
           </div>
-        </section>
-        
+          <!-- End: Main content -->
+        </section> 
       </div>
+      <!-- End: Content -->
 
+      <!-- Begin: Footer -->
       <footer>
+        <!-- Begin: Footer-first -->
         <section class="footer-shop-info">
           <div class="e-column">
+            <!-- Quick search -->
             <div class="column-md-1-4">
               <h2 class="info-title">Tìm kiếm nhanh</h2>
               <div class="info-list">
@@ -243,6 +196,8 @@
                 </ul>
               </div>
             </div>
+
+            <!-- Infos and terms -->
             <div class="column-md-1-4">
               <h2 class="info-title">Một số thông tin và điều khoản</h2>
               <div class="info-list">
@@ -265,10 +220,11 @@
                   <li>
                     <a href="#">Chính sách bảo mật </a>
                   </li>
-                  
                 </ul>
               </div>
             </div>
+
+            <!-- Support -->
             <div class="column-md-1-4">
               <h2 class="info-title">Hỗ trợ người dùng</h2>
               <div class="info-list">
@@ -288,10 +244,11 @@
                   <li>
                     <a href="#">Giải quyết khiếu nại </a>
                   </li>
-                  
                 </ul>
               </div>
             </div>
+
+            <!-- Contact -->
             <div class="column-md-1-4 column-contact">
               <h2 class="info-title">Liên hệ với chúng tôi</h2>
               <div class="social-links">
@@ -309,13 +266,13 @@
                 </a>
               </div>
               <div class="info-list">
-                <div class="contact-line">
+                <div class="">
                   <p></p>
                 </div>
-                <div class="contact-line">
-                  <div class="e-column contact-phonenumber">
+                <div class="">
+                  <div class="e-column">
                     <div>
-                      <i class="fal fa-mobile-android-alt"></i>
+                      <i class=""></i>
                     </div>
                     <div>
                       <span></span>
@@ -326,16 +283,19 @@
             </div>
           </div>
         </section>
-        
-        
+        <!-- End: Footer-first -->
+
+        <!--Begin: Footer-last -->
         <section class="footer-last">
           <div class="e-column">
-            <div class="column-equal">
+            <div class="">
               <span class="text">Copyright © 2023 By QuanPhung. All Rights Reserved.</span>
             </div>
           </div>
         </section>
+        <!-- End: Footer-last -->
       </footer>
-      
+      <!-- End: Footer -->
+    </div>
   </body>
 </html>
