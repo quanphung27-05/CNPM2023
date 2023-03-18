@@ -15,13 +15,23 @@
   outline: none;
 }
 
-body {
-  background-color: #121212;
+:root {
+  --bg-color: #333333;
+  --text-color: rgb(232, 234, 237);
+  --boder-list-color: white;
 }
 
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+[data-theme="dark"] {
+  --bg-color: rgb(232, 234, 237);
+  --text-color:#000;
+  --boder-list-color: black;
+}
 html {
   font-size: 14px;
-  /* font-size: 1rem */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -147,6 +157,56 @@ ol {
   box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 35px;
+  right: 426px;
+  z-index: 1000;
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+.theme-switch input {
+  display:none;
+}
+.slider {
+  background-color: #999;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+.slider:before {
+  background-color: white;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+input:checked + .slider {
+  background-color: #eee;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
 .user-welcome {
   float: right;
   margin: 32px 32px;
@@ -245,8 +305,8 @@ ol {
 }
 
 #filter-top .submit {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   width: 100%; 
   height: 36px;
   padding: 0px 24px;
@@ -305,7 +365,7 @@ ol {
   position: relative;
   display: block;
   align-items: center;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .menu-navigation .u-vertial li a {
@@ -354,7 +414,7 @@ ol {
 .section {
   padding: 20px;
   background-color: #2F58CD;
-  border: 1px solid #dedede;
+  border: 1px solid var(--boder-list-color);
   border-radius: 8px;
   margin-left: 10px;
   width: 100%;
@@ -399,7 +459,7 @@ ol {
 
 /* Listing */
 .post-listing .post-item.vipnoibat {
-  background-color: #000;
+  background-color: var(--bg-color);
   margin-left: -20px;
   margin-right: -20px;
   padding-left: 20px;
@@ -409,7 +469,7 @@ ol {
 
 .post-listing .post-item .post-place {
   margin: 20px 0px;
-  border: 1px solid #fff;
+  border: 1px solid var(--boder-list-color);
   border-radius: 12px;
   display: flex;
 }
@@ -452,7 +512,7 @@ ol {
 .post-listing .post-item .post-location, 
 .post-listing .post-item .post-time, 
 .post-listing .post-item .post-summary { 
-  color: #333;
+  color: var(--text-color);
   margin-right: 15px;
   line-height: 19px;
   float: left;
@@ -460,11 +520,10 @@ ol {
   
 .post-listing .post-item .post-price {
   font-size: 1.2rem;
-  font-weight: 700;
 }
 
 .post-listing .post-item .post-time {
-  color: #aaa;
+  color: var(--text-color);
   margin-right: 0;
   line-height: 19px;
   font-size: .9rem;
@@ -472,12 +531,12 @@ ol {
 }
 
 .post-listing .post-item .post-summary {
-  color: #8a8d91;
+  color: var(--text-color);
   margin: 10px 0 0;
 }
 
 .post-listing .post-item .post-author {
-  color: #8a8d91;
+  color: var(--text-color);
   margin-right: 10px;
   align-items: center;
   display: inline-flex;
@@ -506,7 +565,7 @@ ol {
 
 .post-listing .post-item .btn-quick-zalo:hover{
   background-color:#2F58CD;
-  color:#fff;
+  color: var(--text-color);
 }
 
 /* Begin: Footer */
