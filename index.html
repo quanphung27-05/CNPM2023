@@ -9,36 +9,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.dark.min.css" />
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Find roomate</title>
+    
+    <title>Room</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-    <!-- <script src="js/index.js"></script>
-    <script src="js/zoom.js"></script> -->
-    
     <div id="main">
       <!-- Begin: Header -->
       <div id="header">
-
         <!-- Logo -->
         <div class="row dark-purple">
-          <div class="col p-3"><a id="top-logo" href="#" title="tìm bạn trọ">tìm bạn trọ</a></div>
+          <div class="col p-3">
+            <a id="top-logo" href="#" title="tìm bạn trọ">Tìm bạn trọ</a>
+          </div>
           <div class="col p-3"></div>
           <div class="col p-3">
             <div class="user-welcome clearfix">
-              <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                   <input type="checkbox" id="checkbox" placeholder="a">
-                   <div class="slider round"></div>
-                </label>
-              </div>
-              <a rel="nofollow" class="btn btn-rad btn-add-post light-red" href="#"><i class = "ti-plus mr-4"></i>Đăng tin mới</a>
-              <a rel="nofollow" class="btn btn-rad light-blue" href="#"><i class="ti-user mr-4"></i>Thông tin tài khoản</a>
-              <a rel="nofollow" class="btn btn-rad light-blue" href="#"> <i class="ti-heart mr-4"></i> Yêu thích</a>
+              <a rel="nofollow" class="btn btn-rad btn-add-post light-red" href="#">
+                <i class="ti-plus mr-4"></i>Đăng tin mới </a>
+              <a rel="nofollow" class="btn btn-rad light-blue" href="#">
+                <i class="ti-user mr-4"></i>Thông tin tài khoản </a>
+              <a rel="nofollow" class="btn btn-rad light-blue" href="#">
+                <i class="ti-heart mr-4"></i> Yêu thích </a>
             </div>
           </div>
         </div>
-
         <!-- Begin: Nav -->
         <ul id="nav" class="light-purple">
           <li>
@@ -46,54 +44,70 @@
               <i class="ti-menu"></i>
             </button>
           </li>
-          <li><a href="#">Trang chủ</a></li>
           <li>
-            <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown">
-              Hoạt động
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Cho thuê phòng trọ</a></li>
-              <li><a class="dropdown-item" href="#">Nhà cho thuê</a></li>
-              <li><a class="dropdown-item" href="#">Cho thuê căn hộ</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Tìm người ở ghép</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Blog</a></li>
-          <li>
-            <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown">
-              Hỗ trợ
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Nạp tiền</a></li>
-              <li><a class="dropdown-item" href="#">Bảng giá</a></li>
-            </ul>
+            <a href="#">Trang chủ</a>
           </li>
           <li>
-            <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown">
-              Điều hướng
-            </a>
+            <a href="#">BLOG</a>
+          </li>
+          <li>
+            <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown"> Hoạt động </a>
             <ul class="dropdown-menu">
-              <li class="nav-item"><a class="dropdown-item nav-link" href="#section1">Thành phố lớn</a></li>
-              <li class="nav-item"><a class="dropdown-item nav-link" href="#section2">Danh sách tin</a></li>
-              <li class="nav-item"><a class="dropdown-item nav-link" href="#section3">Về trang web</a></li>
-              <li class="nav-item"><a class="dropdown-item nav-link" href="#section4">Điều khoản và dịch vụ</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Cho thuê phòng trọ</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Nhà cho thuê</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Cho thuê căn hộ</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Tìm người ở ghép</a>
+              </li>
             </ul>
           </li>
-
+          <li>
+            <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown"> Hỗ trợ </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">Nạp tiền</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Bảng giá</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown"> Điều hướng </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a class="dropdown-item nav-link" href="#section1">Thành phố lớn</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item nav-link" href="#section2">Danh sách tin</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item nav-link" href="#section3">Về trang web</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-item nav-link" href="#section4">Điều khoản và dịch vụ</a>
+              </li>
+            </ul>
+          </li>
           <!-- Filter -->
           <section id="filter-top">
-            
-            <div class="btn btn-secondary rounded-pill" style="margin-top: 8px" data-bs-toggle="modal" data-bs-target="#myModal">
-              <i class="ti-search mr-4"></i>
-              Tìm kiếm
+            <div class="btn btn-secondary rounded-pill js-sbtn" style="margin-top: 8px">
+              <i class="ti-search mr-4"></i> Tìm kiếm
             </div>
           </section>
         </ul>
         <!-- End: Nav -->
       </div>
       <!-- End: Header -->
-
       <!-- Begin: Content -->
       <div class="content">
         <section class="intro-header container" id="section1" style="margin-bottom: 20px">
@@ -108,7 +122,6 @@
                   <h4 class="card-title">Hà Nội</h4>
                   <a href="#" class="btn btn-primary">Tìm phòng</a>
                 </div>
-                
               </div>
             </div>
             <div class="col">
@@ -118,7 +131,6 @@
                   <h4 class="card-title">TP Hồ Chí Minh</h4>
                   <a href="#" class="btn btn-primary">Tìm phòng</a>
                 </div>
-                
               </div>
             </div>
             <div class="col">
@@ -128,18 +140,15 @@
                   <h4 class="card-title">Đà Nẵng</h4>
                   <a href="#" class="btn btn-primary">Tìm phòng</a>
                 </div>
-                
               </div>
             </div>
             <div class="col">
               <div class="card" style="width:100%;padding: 5px">
-            
                 <img class="card-img-bottom" src="./assets/img/nt.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title">Nha Trang</h4>
                   <a href="#" class="btn btn-primary">Tìm phòng</a>
                 </div>
-                
               </div>
             </div>
             <div class="col"></div>
@@ -149,8 +158,10 @@
           <!-- Begin: Left sidebar -->
           <div class="column-md-1-5">
             <div class="menu-navigation">
-              <div class="vertical-nav-header light-red"><span>Danh mục</span></div>
-              <ul class="u-vertial" style = "padding-left: 0px;">
+              <div class="vertical-nav-header light-red">
+                <span>Danh mục</span>
+              </div>
+              <ul class="u-vertial" style="padding-left: 0px;">
                 <li>
                   <a href="#">
                     <i class="ti-angle-double-right mr-4"></i>
@@ -182,15 +193,16 @@
                   </a>
                 </li>
               </ul>
-            </div>  
+            </div>
           </div>
           <!-- End: Left sidebar -->
-
           <!-- Begin: Main content -->
           <div class="column-md-3-5">
             <div class="section">
               <!-- Title -->
-              <div class="section-header"><span class="section-title">Danh sách tin đăng</span></div>
+              <div class="section-header">
+                <span class="section-title">Danh sách tin đăng</span>
+              </div>
               <!-- Sort -->
               <div class="post-sort">
                 <span>Sắp xếp: </span>
@@ -198,17 +210,20 @@
                 <a class="" href="#">Mới nhất</a>
                 <a class="" href="#">Phổ biến</a>
               </div>
-
               <div class="post-listing">
                 <div class="post-item clearfix vipnoibat">
                   <div class="post-place">
                     <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
                     <div class="post-meta">
-                      <h2 class="post-title"><a href="#">Phòng trọ Thành Thái</a></h2>
+                      <h2 class="post-title">
+                        <a href="#">Phòng trọ Thành Thái</a>
+                      </h2>
                       <div class="meta-row clearfix">
                         <span class="post-price">5 triệu/tháng</span>
                         <span class="post-acreage">25m²</span>
-                        <span class="post-location"><a href="#">Quận Phú Nhuận, Hồ Chí Minh</a></span>
+                        <span class="post-location">
+                          <a href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
+                        </span>
                         <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
                         <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
                         <div class="post-author">
@@ -216,7 +231,7 @@
                           <span class="">phungquan2003</span>
                         </div>
                         <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
-                     </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -224,11 +239,15 @@
                   <div class="post-place">
                     <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
                     <div class="post-meta">
-                      <h2 class="post-title"><a href="#">Phòng trọ Thành Thái</a></h2>
+                      <h2 class="post-title">
+                        <a href="#">Phòng trọ Thành Thái</a>
+                      </h2>
                       <div class="meta-row clearfix">
                         <span class="post-price">5 triệu/tháng</span>
                         <span class="post-acreage">25m²</span>
-                        <span class="post-location"><a href="#">Quận Phú Nhuận, Hồ Chí Minh</a></span>
+                        <span class="post-location">
+                          <a href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
+                        </span>
                         <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
                         <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
                         <div class="post-author">
@@ -236,7 +255,7 @@
                           <span class="">phungquan2003</span>
                         </div>
                         <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
-                     </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -244,11 +263,15 @@
                   <div class="post-place">
                     <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
                     <div class="post-meta">
-                      <h2 class="post-title"><a href="#">Phòng trọ Thành Thái</a></h2>
+                      <h2 class="post-title">
+                        <a href="#">Phòng trọ Thành Thái</a>
+                      </h2>
                       <div class="meta-row clearfix">
                         <span class="post-price">5 triệu/tháng</span>
                         <span class="post-acreage">25m²</span>
-                        <span class="post-location"><a href="#">Quận Phú Nhuận, Hồ Chí Minh</a></span>
+                        <span class="post-location">
+                          <a href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
+                        </span>
                         <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
                         <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
                         <div class="post-author">
@@ -256,7 +279,7 @@
                           <span class="">phungquan2003</span>
                         </div>
                         <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
-                     </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -264,11 +287,15 @@
                   <div class="post-place">
                     <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
                     <div class="post-meta">
-                      <h2 class="post-title"><a href="#">Phòng trọ Thành Thái</a></h2>
+                      <h2 class="post-title">
+                        <a href="#">Phòng trọ Thành Thái</a>
+                      </h2>
                       <div class="meta-row clearfix">
                         <span class="post-price">5 triệu/tháng</span>
                         <span class="post-acreage">25m²</span>
-                        <span class="post-location"><a href="#">Quận Phú Nhuận, Hồ Chí Minh</a></span>
+                        <span class="post-location">
+                          <a href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
+                        </span>
                         <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
                         <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
                         <div class="post-author">
@@ -276,7 +303,7 @@
                           <span class="">phungquan2003</span>
                         </div>
                         <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
-                     </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -284,11 +311,15 @@
                   <div class="post-place">
                     <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
                     <div class="post-meta">
-                      <h2 class="post-title"><a href="#">Phòng trọ Thành Thái</a></h2>
+                      <h2 class="post-title">
+                        <a href="#">Phòng trọ Thành Thái</a>
+                      </h2>
                       <div class="meta-row clearfix">
                         <span class="post-price">5 triệu/tháng</span>
                         <span class="post-acreage">25m²</span>
-                        <span class="post-location"><a href="#">Quận Phú Nhuận, Hồ Chí Minh</a></span>
+                        <span class="post-location">
+                          <a href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
+                        </span>
                         <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
                         <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
                         <div class="post-author">
@@ -296,7 +327,7 @@
                           <span class="">phungquan2003</span>
                         </div>
                         <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
-                     </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -304,11 +335,15 @@
                   <div class="post-place">
                     <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
                     <div class="post-meta">
-                      <h2 class="post-title"><a href="#">Phòng trọ Thành Thái</a></h2>
+                      <h2 class="post-title">
+                        <a href="#">Phòng trọ Thành Thái</a>
+                      </h2>
                       <div class="meta-row clearfix">
                         <span class="post-price">5 triệu/tháng</span>
                         <span class="post-acreage">25m²</span>
-                        <span class="post-location"><a href="#">Quận Phú Nhuận, Hồ Chí Minh</a></span>
+                        <span class="post-location">
+                          <a href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
+                        </span>
                         <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
                         <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
                         <div class="post-author">
@@ -316,71 +351,74 @@
                           <span class="">phungquan2003</span>
                         </div>
                         <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
-                     </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
-
-            </div>
-          <!-- End: Main content -->
-          <ul class="pagination pagination-lg" style="margin-top: 5px;margin-left: 26%">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">...</a></li>
-            <li class="page-item"><a class="page-link" href="#">11</a></li>
-            <li class="page-item"><a class="page-link" href="#">12</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
+            <!-- End: Main content -->
+            <ul class="pagination pagination-lg" style="margin-top: 5px;margin-left: 26%">
+              <li class="page-item">
+                <a class="page-link" href="#">Previous</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">...</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">11</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">12</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
         </section>
         <section class="intro" id="section3">
           <div class="review container border border-5">
             <h4> Tại sao lại chọn Find roomate?</h4>
-            <p>Chúng tôi biết bạn có rất nhiều lựa chọn, 
-              nhưng Phongtro123.com tự hào là trang web đứng top google về các từ khóa: 
-              cho thuê phòng trọ, nhà trọ, thuê nhà nguyên căn, cho thuê căn hộ, 
-              tìm người ở ghép, cho thuê mặt bằng...
-              Vì vậy tin của bạn đăng trên website sẽ tiếp cận được với nhiều khách hàng hơn,
-               do đó giao dịch nhanh hơn, tiết kiệm chi phí hơn
-              </p>
-              <div class="row">
-                <div class="col">
-                  <h3 class = "d-flex justify-content-center">116.998+</h3>
-                  <p class = "d-flex justify-content-center">Thành viên</p>
-                </div>
-                <div class="col">
-                  <h3 class = "d-flex justify-content-center">103.348+</h3>
-                  <p class = "d-flex justify-content-center">Tin đăng</p>
-                </div>
-                <div class="col">
-                  <h3 class = "d-flex justify-content-center">300.000+</h3>
-                  <p class = "d-flex justify-content-center">Lượt truy cập/tháng</p>
-                </div>
-                <div class="col">
-                  <h3 class = "d-flex justify-content-center">2.500.000+</h3>
-                  <p class = "d-flex justify-content-center">Lượt xem/tháng</p>
-                </div>
+            <p>Chúng tôi biết bạn có rất nhiều lựa chọn, nhưng Phongtro123.com tự hào là trang web đứng top google về các từ khóa: cho thuê phòng trọ, nhà trọ, thuê nhà nguyên căn, cho thuê căn hộ, tìm người ở ghép, cho thuê mặt bằng... Vì vậy tin của bạn đăng trên website sẽ tiếp cận được với nhiều khách hàng hơn, do đó giao dịch nhanh hơn, tiết kiệm chi phí hơn </p>
+            <div class="row">
+              <div class="col">
+                <h3 class="d-flex justify-content-center">116.998+</h3>
+                <p class="d-flex justify-content-center">Thành viên</p>
               </div>
-              <h4> Chi phí thấp hiệu quả tối đa</h4>
-              <img src="./assets/img/5-star.jpg" alt="5-star" style="width:216px; height: 80px;">
-              <p class="customer-review">"Trước khi biết website phongtro123, 
-                mình phải tốn nhiều công sức và chi phí 
-                cho việc đăng tin cho thuê: từ việc phát 
-                tờ rơi, dán giấy, và đăng lên các website 
-                khác nhưng hiệu quả không cao. Từ khi biết 
-                website phongtro123.com, mình đã thử đăng tin lên và 
-                đánh giá hiệu quả khá cao trong khi chi phí khá thấp, 
-                không còn tình trạng phòng trống kéo dài."
-              </p>
-              <p class="customer">Anh Khánh (chủ hệ thống phòng trọ tại Tp.HCM)</p>
-              <h4>Bạn có phòng muốn cho thuê?</h4>
-              <p>Không phải lo tìm người cho thuê, phòng trống kéo dài</p>
-              <div><a rel="nofollow" class="btn btn-rad btn-add-post light-red" href="#"><i class = "ti-plus mr-4"></i>Đăng tin mới</a></div>
+              <div class="col">
+                <h3 class="d-flex justify-content-center">103.348+</h3>
+                <p class="d-flex justify-content-center">Tin đăng</p>
+              </div>
+              <div class="col">
+                <h3 class="d-flex justify-content-center">300.000+</h3>
+                <p class="d-flex justify-content-center">Lượt truy cập/tháng</p>
+              </div>
+              <div class="col">
+                <h3 class="d-flex justify-content-center">2.500.000+</h3>
+                <p class="d-flex justify-content-center">Lượt xem/tháng</p>
+              </div>
+            </div>
+            <h4> Chi phí thấp hiệu quả tối đa</h4>
+            <img src="./assets/img/5-star.jpg" alt="5-star" style="width:216px; height: 80px;">
+            <p class="customer-review">"Trước khi biết website phongtro123, mình phải tốn nhiều công sức và chi phí cho việc đăng tin cho thuê: từ việc phát tờ rơi, dán giấy, và đăng lên các website khác nhưng hiệu quả không cao. Từ khi biết website phongtro123.com, mình đã thử đăng tin lên và đánh giá hiệu quả khá cao trong khi chi phí khá thấp, không còn tình trạng phòng trống kéo dài." </p>
+            <p class="customer">Anh Khánh (chủ hệ thống phòng trọ tại Tp.HCM)</p>
+            <h4>Bạn có phòng muốn cho thuê?</h4>
+            <p>Không phải lo tìm người cho thuê, phòng trống kéo dài</p>
+            <button class="button-animation">
+              <a href="#" style="color: #fff;text-decoration: none;">Đăng bài mới</a>
+            </button>
           </div>
         </section>
-         <section class="care container" style="background-color: #fffcf5;border: 7px dashed #e8eefc;padding: 30px;margin-top: 30px;margin-bottom: 50px;">
+        <section class="care container" style="background-color: #fffcf5;border: 7px dashed #e8eefc;padding: 30px;margin-top: 30px;margin-bottom: 50px;">
           <img src="./assets/img/sp.jpg" alt="Cinque Terre" style="width: 600px;height: 400px;">
           <p style="font-size: 1.2rem;margin-bottom: 20px;color: #233762; font-weight: 450;">Liên hệ với chúng tôi nếu bạn cần hỗ trợ:</p>
           <div class="row">
@@ -400,21 +438,23 @@
               <h3 style="color: #233762;font-size: 1.5rem;font-weight: 700;margin: 5px 0;">Zalo:0911953124</h3>
             </div>
           </div>
-          <button type="button" class="btn btn-primary" style="margin-top: 30px;margin-bottom:35px;font-weight: 700;padding: 10px 30px">Gửi liên hệ</button>
-         </section>
-        <section class="report container float-left" style="width: 65%; margin-bottom: 50px;background-color: #fffcf5;border: 7px dashed #e8eefc">
-          <h2 style="color: rgb(45, 103, 173);">Đánh giá của bạn</h2>
-          <div class="card" style="border: none; background-color: transparent;">
+          <button class="button-animation js-send-info" style="margin-top: 30px;margin-bottom:35px;font-weight: 700;padding: 10px 30px">Gửi liên hệ</button>
+        </section>
+        <section class="report container float-left" style="width: 100%; margin-bottom: 50px;background-color: #fffcf5;border: 7px dashed #e8eefc">
+          <h2 style="color: rgb(45, 103, 173);text-align: center;">Đánh giá của bạn</h2>
+          <div class="card" style="border: none; background-color: transparent;padding: 0 17%">
             <form>
               <div class="form-group">
                 <div class="input-group">
                   <textarea class="form-control" id="comment-input" rows="6" placeholder="Nhập nội dung comment"></textarea>
                   <div class="input-group-append">
-                    <button class="btn" id="clear-comment"><i class="ti-close"></i></button>
+                    <button class="btn" id="clear-comment">
+                      <i class="ti-close"></i>
+                    </button>
                   </div>
                 </div>
               </div>
-              <div class="row was-validated" action="/action_page.php" style="margin-top: 5px;" >
+              <div class="row was-validated" action="/action_page.php" style="margin-top: 5px;">
                 <div class="col-5" style="padding-right: 0px;">
                   <input type="text" class="form-control" id="email-comment" placeholder="Email..." name="email" required>
                   <div class="valid-feedback">Hợp lệ.</div>
@@ -426,165 +466,99 @@
                   <div class="invalid-feedback">Vui lòng không để trống ô này.</div>
                 </div>
                 <div class="col-2">
-                  <button type="button" class="btn btn-info" style="margin-left: 3px;">Gửi đánh giá</button>
+                  <button type="button" class="button-animation btn-info" style="margin-left: -5px;padding-top: 6px;padding-bottom: 6px;">Xác nhận</button>
                 </div>
               </div>
             </form>
           </div>
         </section>
       </div>
-      <!-- End: Content -->
-
-      <!-- Begin: Footer -->
-      <footer id="section4" >
-        <!-- Begin: Footer-first -->
-        <section class="footer-shop-info">
-          <div class="e-column">
-            <!-- Quick search -->
-            <div class="column-md-1-4">
-              <h2 class="info-title">Tìm kiếm nhanh</h2>
-              <div class="info-list">
-                <ul>
-                  <li>
-                    <a href="#">Find roomate</a>
-                  </li>
-                </ul>
-              </div>
+      
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>Roomaate là một web giúp người dùng tìm kiếm và đặt phòng trọ 
+                và bạn trọ một cách dễ dàng. Với roomate,bạn có thể xem thông tin chi tiết 
+                về các phòng trọ, như giá cả, diện tích, địa điểm và các tiện nghi khác.</p>
             </div>
-
-            <!-- Infos and terms -->
-            <div class="column-md-1-4">
-              <h2 class="info-title">Một số thông tin và điều khoản</h2>
-              <div class="info-list">
-                <ul>
-                  <li>
-                    <a href="#">Trang chủ </a>
-                  </li>
-                  <li>
-                    <a href="#">Về trang web </a>
-                  </li>
-                  <li>
-                    <a href="#">Blog </a>
-                  </li>
-                  <li>
-                    <a href="#">Quy chế hoạt động </a>
-                  </li>
-                  <li>
-                    <a href="#">Quy định sử dụng </a>
-                  </li>
-                  <li>
-                    <a href="#">Chính sách bảo mật </a>
-                  </li>
-                </ul>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>0843325687</a>
               </div>
-            </div>
-
-            <!-- Support -->
-            <div class="column-md-1-4">
-              <h2 class="info-title">Hỗ trợ người dùng</h2>
-              <div class="info-list">
-                <ul>
-                  <li>
-                    <a href="#">Câu hỏi thường gặp</a>
-                  </li>
-                  <li>
-                    <a href="#">Hướng dẫn đăng tin </a>
-                  </li>
-                  <li>
-                    <a href="#">Bảng giá dịch vụ </a>
-                  </li>
-                  <li>
-                    <a href="#">Quy định đăng tin  </a>
-                  </li>
-                  <li>
-                    <a href="#">Giải quyết khiếu nại </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Contact -->
-            <div class="column-md-1-4 column-contact">
-              <h2 class="info-title">Liên hệ với chúng tôi</h2>
-              <div class="social-links">
-                <a class="social-fb" rel="nofollow" target="_blank" href="#">
-                  <i></i>
-                </a>
-                <a class="social-youtube" rel="nofollow" target="_blank" href="#">
-                  <i></i>
-                </a>
-                <a class="social-zalo" rel="nofollow" target="_blank" href="#">
-                  <i></i>
-                </a>
-                <a class="social-twitter" rel="nofollow" target="_blank" href="#">
-                  <i></i>
-                </a>
-              </div>
-              <div class="info-list">
-                <div class="">
-                  <p></p>
-                </div>
-                <div class="">
-                  <div class="e-column">
-                    <div>
-                      <i class=""></i>
-                    </div>
-                    <div>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>phungquan27052003@gmail.com</a>
               </div>
             </div>
           </div>
-        </section>
-        <!-- End: Footer-first -->
-
-        <!--Begin: Footer-last -->
-        <section class="footer-last">
-          <div class="e-column">
-            <div class="">
-              <span class="text">Copyright © 2023 By QuanPhung. All Rights Reserved.</span>
-            </div>
+          <div class="middle box">
+            <div class="topic">Our Services</div>
+            <div><a href="#">Trang chủ</a></div>
+            <div><a href="#">Hỗ trợ người dùng </a></div>
+            <div><a href="#">Câu hỏi thường gặp</a></div>
+            <div><a href="#">Chính sách và điều khoản</a></div>
+            <div><a href="#">Quy định đăng tin</a></div>
+            <div><a href="#">Blog</a></div>
           </div>
-        </section>
-        <!-- End: Footer-last -->
+          <div class="right box">
+            <div class="topic">Subscribe us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <p>Copyright &#169; 2023 <a href="#">QuanPhung</a> All rights reserved</p>
+        </div>
       </footer>
-      <!-- End: Footer -->
-
       <div class="offcanvas offcanvas-start" id="demo" style="background-color: #0084f8;">
-          <img src="./assets/img/slider/slider1.jpg" class="rounded-circle" alt="Cinque Terre">
-          <p>Phùng Lê Anh Quân</p>
-          <div class="border-top"></div>
-          <button class="btn btn-secondary" type="button">Trang chủ</button>
-          <button class="btn btn-secondary" type="button">Bảo mật</button>
-          <button class="btn btn-secondary" type="button">Đổi mật khẩu</button>
-          <button class="btn btn-secondary" type="button">Chăm sóc khách hàng</button>
-          <button class="btn btn-secondary" type="button">Đăng xuất</button>
+        <img src="./assets/img/slider/slider1.jpg" class="rounded-circle" alt="Cinque Terre">
+        <p>Phùng Lê Anh Quân</p>
+        
+        <button class="btn btn-secondary" type="button"><i class="ti-home" style="margin-right: 15px;font-size: 15px;"></i> Trang chủ</button>
+        <button class="btn btn-secondary" type="button"><i class="ti-lock" style="margin-right: 15px;font-size: 15px;"></i>Bảo mật</button>
+        <button class="btn btn-secondary" type="button"><i class="ti-unlock" style="margin-right: 15px;font-size: 15px;"></i>Đổi mật khẩu</button>
+        <button class="btn btn-secondary" type="button"><i class="ti-headphone-alt" style="margin-right: 15px;font-size: 15px;"></i>Chăm sóc khách hàng</button>
+        <button class="btn btn-secondary" type="button"><i class="ti-shift-right" style="margin-right: 15px;font-size: 15px;"></i>Đăng xuất</button>
       </div>
-
-      <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-      
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Tìm kiếm</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-      
-            <!-- Modal body -->
-            <div class="modal-body">
-              <form>
-                <label for="browser" class="form-label">Thành Phố:</label>
-                <select class="form-select form-select-lg">
-                  <option>Hà Nội</option>
-                  <option>Thành Phố Hồ Chí Minh</option>
-                  <option>Đà nẵng</option>
-                  <option>Nha Trang</option>
-                </select>
-                <label for="browser" class="form-label">Mức giá:</label>
-                <select class="form-select form-select-lg">
+      <div class="modal">
+        <div class="modal-container">
+          <div class="modal-close">
+            <i class="ti-close"></i>
+          </div>
+          <header class="modal-header">
+            <i class="ti-search"></i> Tìm kiếm
+          </header>
+          <div class="modal-body">
+            <label for="" class="modal-label">
+              <i class="ti-map-alt"></i> Tỉnh thành </label>
+              <select class="form-select form-select-lg">
+                <option>Hà Nội</option>
+                <option>Thành Phố Hồ Chí Minh</option>
+                <option>Đà nẵng</option>
+                <option>Nha Trang</option>
+              </select>
+              <label for="" class="modal-label">
+              <i class="ti-wallet"></i> Diện tích </label>
+              <select class="form-select form-select-lg">
+                <option>Dưới 20 mét vuông</option>
+                <option>20 mét vuông - 30 mét vuông</option>
+                <option>30 mét vuông - 40 mét vuông</option>
+                <option>Trên 40 mét vuông</option>
+              </select>
+            <label for="" class="modal-label">
+              <i class="ti-money"></i> Mức giá </label>
+            <select class="form-select form-select-lg">
                   <option>Dưới 1 triệu</option>
                   <option>1 triệu - 2 triệu</option>
                   <option>2 triệu - 3 triệu</option>
@@ -593,29 +567,42 @@
                   <option>5 triệu - 6 triệu</option>
                   <option>Trên 6 triệu</option>
                 </select>
-                <label for="browser" class="form-label">Diện tích:</label>
-                <select class="form-select form-select-lg">
-                  <option>Dưới 20 mét vuông</option>
-                  <option>20 mét vuông - 30 mét vuông</option>
-                  <option>30 mét vuông - 40 mét vuông</option>
-                  <option>Trên 40 mét vuông</option>
-                </select>
-                <button type="submit" class="btn btn-primary" style="margin-top: 5px;">Submit</button>
-               </form>    
-            </div>
-      
-          
-      
+            <button class="confirm-search"> Xác nhận <i class="ti-check"></i>
+            </button>
+          </div>
+          <div class="modal-footer">
+            
           </div>
         </div>
       </div>
-      
-
+      <div class="modal-contact">
+        <div class="bottom">
+          <div class="info"> Nhập thông tin của bạn <br>để được chúng tôi hỗ trợ sớm nhất </div>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your phone number" required style="padding-left: 15px;">
+              
+            </div>
+            <div class="input-box">
+              
+              <input type="text" placeholder="Enter your full name" required style="padding-left: 15px;">
+            </div>
+            <div class="input-box">
+              <div class="row">
+                <div class="col">
+                  <input type="submit" value="Subscribe" class="js-submit">
+                </div>
+                <div class="col">
+                  <button class="close-btn-contact js-close-btn-contact">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="footer"> Don't worry, we don't spam </div>
+        </div>
+      </div>
     </div>
-    <script src="js/nightmode.js"></script>
     <script src="js/close.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
-      
-          
-          
