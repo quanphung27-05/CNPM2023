@@ -112,6 +112,8 @@
     pointer-events: none;
     align-items: center;
     justify-content: center;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
   }
   .modal-contact.open {
     opacity: 1;
