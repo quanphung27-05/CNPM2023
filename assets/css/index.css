@@ -234,6 +234,17 @@ ol {
   
 }
 
+#filter-main > .filter-list{
+  margin-left: 120px;
+  margin-right: -200px;
+}
+
+#filter-main > .filter-list> .filter-item{
+  padding-left: 0px !important;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 /* Begin: Content */
 .content{
   margin-top: 180px;

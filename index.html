@@ -99,11 +99,52 @@
           </li>
           <!-- Filter -->
           <section id="filter-top">
-            <div class="btn btn-secondary rounded-pill js-sbtn" style="margin-top: 8px">
-              <i class="ti-search mr-4"></i> Tìm kiếm
+            <div class="btn btn-secondary rounded-pill" style="margin-top: 8px" data-bs-toggle="collapse" data-bs-target="#filter-main">
+              <i class="ti-filter mr-4"></i> Bộ lọc
             </div>
+            
           </section>
+          
         </ul>
+        <div id="filter-main" class="collapse">
+          <div class="row filter-list">
+            <div class="col filter-item">
+              
+              <select class="form-select form-select-lg">
+                <option>Tỉnh thành</option>
+                <option>Hà Nội</option>
+                <option>Thành Phố Hồ Chí Minh</option>
+                <option>Đà nẵng</option>
+                <option>Nha Trang</option>
+              </select>
+            </div>
+            <div class="col filter-item">
+              <select class="form-select form-select-lg">
+                <option>Diện tích</option>
+                <option>Dưới 20 mét vuông</option>
+                <option>20 mét vuông - 30 mét vuông</option>
+                <option>30 mét vuông - 40 mét vuông</option>
+                <option>Trên 40 mét vuông</option>
+              </select>
+            </div>
+            <div class="col filter-item">
+              <select class="form-select form-select-lg">
+                <option>Dưới 1 triệu</option>
+                <option>1 triệu - 2 triệu</option>
+                <option>2 triệu - 3 triệu</option>
+                <option>3 triệu - 4 triệu</option>
+                <option>4 triệu - 5 triệu</option>
+                <option>5 triệu - 6 triệu</option>
+                <option>Trên 6 triệu</option>
+              </select>
+            </div>
+            <div class="col">
+              <div class="btn btn-secondary" style="margin-top: 8px" data-bs-toggle="collapse" data-bs-target="#filter-main">
+                 Xác nhận
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- End: Nav -->
       </div>
       <!-- End: Header -->
@@ -587,48 +628,7 @@
         <button class="btn btn-secondary" type="button">
           <i class="ti-shift-right" style="margin-right: 15px;font-size: 15px;"></i>Đăng xuất </button>
       </div>
-      <div class="modal">
-        <div class="modal-container">
-          <div class="modal-close">
-            <i class="ti-close"></i>
-          </div>
-          <header class="modal-header">
-            <i class="ti-search"></i> Tìm kiếm
-          </header>
-          <div class="modal-body">
-            <label for="" class="modal-label">
-              <i class="ti-map-alt"></i> Tỉnh thành </label>
-            <select class="form-select form-select-lg">
-              <option>Hà Nội</option>
-              <option>Thành Phố Hồ Chí Minh</option>
-              <option>Đà nẵng</option>
-              <option>Nha Trang</option>
-            </select>
-            <label for="" class="modal-label">
-              <i class="ti-wallet"></i> Diện tích </label>
-            <select class="form-select form-select-lg">
-              <option>Dưới 20 mét vuông</option>
-              <option>20 mét vuông - 30 mét vuông</option>
-              <option>30 mét vuông - 40 mét vuông</option>
-              <option>Trên 40 mét vuông</option>
-            </select>
-            <label for="" class="modal-label">
-              <i class="ti-money"></i> Mức giá </label>
-            <select class="form-select form-select-lg">
-              <option>Dưới 1 triệu</option>
-              <option>1 triệu - 2 triệu</option>
-              <option>2 triệu - 3 triệu</option>
-              <option>3 triệu - 4 triệu</option>
-              <option>4 triệu - 5 triệu</option>
-              <option>5 triệu - 6 triệu</option>
-              <option>Trên 6 triệu</option>
-            </select>
-            <button class="confirm-search"> Xác nhận <i class="ti-check"></i>
-            </button>
-          </div>
-          <div class="modal-footer"></div>
-        </div>
-      </div>
+      
       <div class="modal-contact">
         <div class="bottom">
           <div class="info"> Nhập thông tin của bạn <br>để được chúng tôi hỗ trợ sớm nhất </div>
