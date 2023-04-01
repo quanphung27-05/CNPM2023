@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Ten m la:</p>
+    <p name="pname" id="pname"></p>
+
+
+        <script>
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    const myObj = JSON.parse(this.responseText);
+                    document.getElementById("pname").innerHTML = myObj[0].email;
+                }
+            };
+            xmlhttp.open("GET", "profile.php" , true);
+            xmlhttp.send();
+        </script>    
+
+</body>
+</html>

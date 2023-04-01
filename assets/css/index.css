@@ -18,6 +18,7 @@
   box-sizing: border-box;
   outline: none;
   font-family: 'FontName', sans-serif; 
+  
 }
 
 :root {
@@ -103,7 +104,7 @@ ol {
 }
 
 .light-blue {
-  background-color: #3795BD;
+  background-color: #0D6EFD;
 }
 
 .light-red {
@@ -118,6 +119,7 @@ ol {
   left: 0;
   right: 0;
   z-index: 1;
+  background-color: #fff;
 }
 
 /* Logo */
@@ -126,8 +128,8 @@ ol {
 }
 
 #top-logo {
-  width: 97px;
-  height: 97px;
+  width: 90px;
+  height: 90px;
   margin: 3px 64px;
   background: url('../img/logo_UET.png') top center / cover no-repeat;
   background-size: contain;
@@ -145,85 +147,42 @@ ol {
   border-radius: 46px;
 }
 
-.theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 35px;
-  right: 460px;
-  z-index: 1000;
+.header-btn{
+  color: #000;
+  padding:13px 16px;
+  margin-top: 30px;
 }
-.theme-switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
+
+.header-btn:hover{
+  color: #000;
+  background-color: #FAFAFA;
+  
+  border-radius: 8px;
 }
-.theme-switch input {
-  display:none;
+
+.header-add-post{
+  color: #000;
+  padding:13px 16px;
+  margin-top: 30px;
+  border-radius: 8px;
+  color: #fff;
 }
-.slider {
-  background-color: #999;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
-}
-.slider:before {
-  background-color: white;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: .4s;
-  width: 26px;
-}
-input:checked + .slider {
-  background-color: #eee;
-}
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-.slider.round {
-  border-radius: 34px;
-}
-.slider.round:before {
-  border-radius: 50%;
+
+.header-add-post:hover{
+  color: #fff;
+  background-color:#f61e42 ;
 }
 
 .user-welcome {
   float: right;
-  margin: 32px 32px;
+  margin: 0 32px;
   display: flex;
   align-items: center;
 }
 
-.user-welcome .btn {
-  margin-right: 5px;
-  color: #fff;
-  cursor: pointer;
-  position: relative;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.user-welcome .btn:hover {
-  color: #000;
-  background-color: #2F58CD;
-}
-
-.user-welcome .btn-add-post:hover {
-  color: #000;
-  background-color: #eb0f34;
-}
-
-
-
 #nav, .subnav {
   list-style-type: none;
+  margin-bottom: 0px;
 }
 
 #nav > li {
@@ -235,6 +194,8 @@ input:checked + .slider:before {
   color: #fff;
   text-transform: uppercase;
 }
+
+
 
 #nav li a,
 #nav li button {
@@ -273,15 +234,23 @@ input:checked + .slider:before {
   
 }
 
-
-
-
-
 /* Begin: Content */
 .content{
   margin-top: 180px;
   margin-left: 30px;
   margin: 180px 30px 0px;
+}
+
+.card-list{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+.card{
+  width:100%;
+  height: 250px;
+ 
 }
 
 /* Left sidebar */
@@ -307,7 +276,7 @@ input:checked + .slider:before {
   flex-direction: column;
   border: 2px solid #f73859;
   border-radius: 0 0 16px 16px;
-  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+  
 }
 
 .menu-navigation .u-vertial li,
@@ -386,27 +355,6 @@ input:checked + .slider:before {
   text-transform: uppercase;
 }
 
-/* Sort */
-.post-sort {
-  margin-bottom: 10px;
-  font-size: .95rem;
-}
-
-.post-sort a.active {
-  color: #000000F2;
-  background-color: #F8F9FA;
-}
-
-.post-sort a {
-  display: inline-block;
-  margin-left: 5px;
-  margin-right: 0;
-  text-decoration: none;
-  color: #000000BF;
-  background: #f1f1f1;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
 
 /* Listing */
 .post-listing .post-item.vipnoibat {
@@ -706,6 +654,8 @@ footer a:hover{
 .care{
   text-align: center;
 }
+
+
 
 .rating-box {
   display: flex;
