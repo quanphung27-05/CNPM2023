@@ -3,6 +3,9 @@ var swiper = new Swiper(".slide-container", {
     spaceBetween: 20,
     sliderPerGroup: 4,
     loop: true,
+    autoplay: {
+      delay: 2000
+    },
     centerSlide: "true",
     fade: "true",
     grabCursor: "true",
@@ -32,3 +35,25 @@ var swiper = new Swiper(".slide-container", {
     },
   });
   
+  
+const navBar = document.querySelector(".side_bar"),
+      menuBtns = document.querySelectorAll(".menu-icon"),
+      overlay = document.querySelector(".overlay");
+
+menuBtns.forEach((menuBtn) => {
+  menuBtn.addEventListener("click", () => {
+    navBar.classList.toggle("open");
+  });
+});
+
+overlay.addEventListener("click", () => {
+  navBar.classList.remove("open");
+});
+
+
+let inputBox = document.querySelector(".input-box"),
+                searchIcon = document.querySelector(".icon-search"),
+                closeIcon = document.querySelector(".close-icon");
+
+            searchIcon.addEventListener("click", () => inputBox.classList.add("open"));
+            closeIcon.addEventListener("click", () => inputBox.classList.remove("open"));

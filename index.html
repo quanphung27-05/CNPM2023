@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="./assets/css/animation.css">
     <link rel="stylesheet" href="./assets/css/modal.css">
     <link rel="stylesheet" href="./assets/css/slider.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/searchbar.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <title>Room</title>
   </head>
@@ -39,9 +42,9 @@
         <!-- Begin: Nav -->
         <ul id="nav" class="light-blue">
           <li>
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-              <i class="ti-menu"></i>
-            </button>
+            <div class="menu-button">
+              <i class="bx bx-menu menu-icon outline-icon"></i>
+            </div>
           </li>
           <li>
             <a href="#">Trang chủ</a>
@@ -82,28 +85,35 @@
           </li>
           <li>
             <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown"> Điều hướng </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" style="color: #000">
               <li class="nav-item">
-                <a class="dropdown-item nav-link" href="#section1">Thành phố lớn</a>
+                <a class="dropdown-item" href="#section1">Thành phố lớn</a>
               </li>
               <li class="nav-item">
-                <a class="dropdown-item nav-link" href="#section2">Danh sách tin</a>
+                <a class="dropdown-item" href="#section2">Danh sách tin</a>
               </li>
               <li class="nav-item">
-                <a class="dropdown-item nav-link" href="#section3">Về trang web</a>
+                <a class="dropdown-item" href="#section3">Về trang web</a>
               </li>
               <li class="nav-item">
-                <a class="dropdown-item nav-link" href="#section4">Điều khoản và dịch vụ</a>
+                <a class="dropdown-item" href="#section4">Điều khoản và dịch vụ</a>
               </li>
             </ul>
           </li>
           <!-- Filter -->
-          <section id="filter-top">
-            <div class="btn btn-secondary rounded-pill" style="margin-top: 8px" data-bs-toggle="collapse" data-bs-target="#filter-main">
+          <div id="filter-top" class="row">
+            
+            <div class="col btn btn-secondary rounded-pill" style="margin-top: 6px;padding-top: 8px" data-bs-toggle="collapse" data-bs-target="#filter-main">
               <i class="ti-filter mr-4"></i> Bộ lọc
             </div>
-            
-          </section>
+            <div class="col input-box">
+              <input type="text" placeholder="Search...">
+              <span class="icon-search">
+                  <i class="uil uil-search search-icon"></i>
+              </span>
+              <i class="uil uil-times close-icon"></i>
+            </div>
+          </div>
           
         </ul>
         <div id="filter-main" class="collapse">
@@ -138,9 +148,9 @@
                 <option>Trên 6 triệu</option>
               </select>
             </div>
-            <div class="col">
-              <div class="btn btn-secondary" style="margin-top: 8px" data-bs-toggle="collapse" data-bs-target="#filter-main">
-                 Xác nhận
+            <div class="col submit-filter">
+              <div class="btn btn-secondary btn-filter">
+                 <p style="padding-top: 4px">Xác nhận</p>
               </div>
             </div>
           </div>
@@ -264,7 +274,7 @@
                     <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
                     <div class="post-meta">
                       <h2 class="post-title">
-                        <a href="#">Phòng trọ Thành Thái</a>
+                        <a style="color: #000" href="#">Phòng trọ Thành Thái</a>
                       </h2>
                       <div class="meta-row clearfix">
                         <span class="post-price">5 triệu/tháng</span>
@@ -288,7 +298,7 @@
                     <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
                     <div class="post-meta">
                       <h2 class="post-title">
-                        <a href="#">Phòng trọ Thành Thái</a>
+                        <a style="color: #000" href="#">Phòng trọ Thành Thái</a>
                       </h2>
                       <div class="meta-row clearfix">
                         <span class="post-price">5 triệu/tháng</span>
@@ -312,7 +322,7 @@
                     <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
                     <div class="post-meta">
                       <h2 class="post-title">
-                        <a href="#">Phòng trọ Thành Thái</a>
+                        <a style="color: #000" href="#">Phòng trọ Thành Thái</a>
                       </h2>
                       <div class="meta-row clearfix">
                         <span class="post-price">5 triệu/tháng</span>
@@ -336,7 +346,7 @@
                     <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
                     <div class="post-meta">
                       <h2 class="post-title">
-                        <a href="#">Phòng trọ Thành Thái</a>
+                        <a style="color: #000" href="#">Phòng trọ Thành Thái</a>
                       </h2>
                       <div class="meta-row clearfix">
                         <span class="post-price">5 triệu/tháng</span>
@@ -360,7 +370,7 @@
                     <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
                     <div class="post-meta">
                       <h2 class="post-title">
-                        <a href="#">Phòng trọ Thành Thái</a>
+                        <a style="color: #000" href="#">Phòng trọ Thành Thái</a>
                       </h2>
                       <div class="meta-row clearfix">
                         <span class="post-price">5 triệu/tháng</span>
@@ -384,7 +394,7 @@
                     <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
                     <div class="post-meta">
                       <h2 class="post-title">
-                        <a href="#">Phòng trọ Thành Thái</a>
+                        <a style="color: #000" href="#">Phòng trọ Thành Thái</a>
                       </h2>
                       <div class="meta-row clearfix">
                         <span class="post-price">5 triệu/tháng</span>
@@ -488,8 +498,8 @@
           </div>
           <button class="button-animation js-send-info" style="margin-top: 30px;margin-bottom:35px;font-weight: 700;padding: 10px 30px">Gửi liên hệ</button>
         </section>
-        <section class="report container float-left" style="width: 100%; margin-bottom: 50px;background-color: #fffcf5;border: 7px dashed #e8eefc">
-          <section class="container-report">
+        <section class="report container float-left" style="width: 100%; margin-bottom: 50px;background-color: #fff;border: 7px dashed #e8eefc">
+          <section class="container-report" style="background-color: #ffff">
             <div class="testimonial mySwiper">
               <div class="testi-content swiper-wrapper" style="z-index:0">
                 <div class="slide swiper-slide">
@@ -614,20 +624,75 @@
           <p>Copyright &#169; 2023 <a href="#">QuanPhung</a> All rights reserved </p>
         </div>
       </footer>
-      <div class="offcanvas offcanvas-start" id="demo" style="background-color: #0084f8;">
-        <img src="./assets/img/slider/slider1.jpg" class="rounded-circle" alt="Cinque Terre">
-        <p>Phùng Lê Anh Quân</p>
-        <button class="btn btn-secondary" type="button">
-          <i class="ti-home" style="margin-right: 15px;font-size: 15px;"></i> Trang chủ </button>
-        <button class="btn btn-secondary" type="button">
-          <i class="ti-lock" style="margin-right: 15px;font-size: 15px;"></i>Bảo mật </button>
-        <button class="btn btn-secondary" type="button">
-          <i class="ti-unlock" style="margin-right: 15px;font-size: 15px;"></i>Đổi mật khẩu </button>
-        <button class="btn btn-secondary" type="button">
-          <i class="ti-headphone-alt" style="margin-right: 15px;font-size: 15px;"></i>Chăm sóc khách hàng </button>
-        <button class="btn btn-secondary" type="button">
-          <i class="ti-shift-right" style="margin-right: 15px;font-size: 15px;"></i>Đăng xuất </button>
+      <div class="side_bar">
+        <div class="sidebar">
+          <div class="logo-sidebar">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name">Roommate</span>
+          </div>
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-home-alt icon"></i>
+                  <span class="link">Dashboard</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-bar-chart-alt-2 icon"></i>
+                  <span class="link">Revenue</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-bell icon"></i>
+                  <span class="link">Notifications</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-message-rounded icon"></i>
+                  <span class="link">Messages</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-pie-chart-alt-2 icon"></i>
+                  <span class="link">Analytics</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-heart icon"></i>
+                  <span class="link">Likes</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-folder-open icon"></i>
+                  <span class="link">Files</span>
+                </a>
+              </li>
+            </ul>
+            <div class="bottom-cotent">
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-cog icon"></i>
+                  <span class="link">Settings</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-log-out icon"></i>
+                  <span class="link">Logout</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
       </div>
+      <section class="overlay"></section>
       
       <div class="modal-contact">
         <div class="bottom">

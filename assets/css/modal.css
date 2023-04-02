@@ -1,62 +1,4 @@
-.modal.open {
-    opacity: 1;
-    pointer-events: auto;
-    transform: scale(1);
-  }
-  
-  .modal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-    align-items: center;
-    justify-content: center;
-    transform: scale(1.2);
-    transition: all 0.3s ease-in-out;
-  }
-  .modal-container {
-    background-color: #fff;
-    width: 900px;
-    min-height: 200px;
-    position: relative;
-  }
-  
-  .modal-header {
-    background: #009688;
-    height: 129px;
-  
-    align-items: center;
-    justify-content: center;
-    font-size: 23px;
-    color: #fff;
-  }
-  
-  
-  .modal-close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: #fff;
-    padding: 16px;
-    cursor: pointer;
-    opacity: 0.8;
-  }
-  
-  .modal-close:hover {
-    background: #ccc;
-    color: #000;
-  }
-  .modal-label {
-    font-size: 15px;
-  
-    margin-bottom: 12px;
-    margin-top: 15px;
-  }
+
   
   .modal-input {
     padding: 8px;
@@ -83,7 +25,7 @@
     color: #fff;
     border: 1px solid #fff;
     cursor: pointer;
-    border-radius: 10px
+    border-radius: 10px;
   }
   
   .confirm-search:hover {

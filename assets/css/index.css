@@ -200,14 +200,14 @@ ol {
 #nav li a,
 #nav li button {
   text-decoration: none;
-  display: block;
+  display: inline-block;
   line-height: 46px;
   padding: 0px 24px;
 }
 
-.ti-menu{
-  line-height: 100px;
-  color: #fff;
+.menu-button:hover{
+  cursor: pointer;
+  color: black !important;
 }
 
 #nav > li:hover > a,
@@ -215,7 +215,7 @@ ol {
 #nav > li:hover > button,
 #nav .subnav li:hover button {
   color: #000;
-  background-color: #2F58CD;
+  
   border-radius: 8px;
 }
 
@@ -244,6 +244,18 @@ ol {
   padding-top: 4px;
   padding-bottom: 4px;
 }
+
+.submit-filter{
+  margin-top: 4px;
+  padding-left: 0px !important;
+}
+.btn-filter{
+  height: 40px !important;
+  width: 120px;
+  padding-top: 5px;
+  
+}
+
 
 /* Begin: Content */
 .content{
@@ -344,7 +356,7 @@ ol {
 /* Main content */
 .section {
   padding: 20px;
-  background-color: #2F58CD;
+  background-color: #0D6EFD;
   border: 1px solid var(--boder-list-color);
   border-radius: 20px;
   margin-left: 10px;
@@ -369,7 +381,7 @@ ol {
 
 /* Listing */
 .post-listing .post-item.vipnoibat {
-  background-color: #fff9f3;
+  background-color: #fff;
   margin-left: -20px;
   margin-right: -20px;
   display: flex;
@@ -404,6 +416,11 @@ ol {
   display: block;
   white-space: normal;
   margin: 0 0 10px;
+ 
+}
+
+.post-listing .post-item .post-title h2 a{
+  color: #000;
 }
 
 .post-listing .post-item .meta-row {
@@ -455,11 +472,11 @@ ol {
 }
 
 .post-listing .post-item .btn-quick-zalo {
-  color: #2F58CD;
+  color: #0D6EFD;
   margin-top: 5px;
   margin-left: 5px;
   padding: 4px 7px;
-  border: 1px solid #2F58CD;
+  border: 1px solid #0D6EFD;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
@@ -467,7 +484,7 @@ ol {
 }
 
 .post-listing .post-item .btn-quick-zalo:hover{
-  background-color:#2F58CD;
+  background-color:#0D6EFD;
   color: var(--text-color);
 }
 
@@ -487,7 +504,7 @@ footer .content{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-footer .content p,a{
+footer .content p ,a{
   color: #fff;
 }
 footer .content .box{
