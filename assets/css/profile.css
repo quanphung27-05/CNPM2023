@@ -37,6 +37,11 @@
     
   }
 
+p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 .row{
   margin-right: 0 !important;
 }
@@ -63,6 +68,11 @@ li,
 ol {
   list-style: none;
   
+}
+
+.row .sidebar{
+  position: fixed;
+  z-index: 1;
 }
 
 .nav-sidebar{
@@ -203,6 +213,8 @@ a {
     margin-bottom: 15px;
 }
 
+
+.input-size > input,
 .more-info > .row > .input-size > input{
     width: 100%;
     height: 34px;
@@ -225,4 +237,90 @@ a {
 
 .save-button{
     margin-left: 30%;
+}
+
+
+.change-info .form-select-lg {
+  height: 36px;
+  font-size: 1rem;
+  color: #495057;
+}
+
+.up-address h3{
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-bottom: 2.5rem
+}
+
+.up-description h3{
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-bottom: 2.5rem;
+  margin-top: 3rem;
+}
+
+.des-tilte{
+  font-weight: bold;
+  padding-bottom: 3px;
+  padding-top: calc(0.375rem + 1px);
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+.choose-type-post{
+  display: flex;
+  height: 36px;
+  font-size: 1rem;
+  width: 40%;
+  color: #495057;
+  justify-content: center;
+  
+}
+
+.input-tilte-size{
+  width: 100% !important;
+}
+
+#des-content{
+  width: 100%;
+  background-color: #fff;
+  background-clip: padding-box;
+  display: block;
+  border: 1px solid #ced4da;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  padding: 0.375rem 0.75rem;
+}
+
+input#file{
+  display: none;
+}
+
+.file-upload{
+  height: 300px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px dashed #999;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.file-upload:hover{
+  cursor: pointer;
+}
+
+.col-lg-10{
+  margin-left: auto;
+}
+
+.box-size{
+  width: 50% !important;
+}
+
+.input-title-uppost{
+  width: 20% !important;
 }
