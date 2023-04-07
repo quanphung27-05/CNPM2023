@@ -130,8 +130,8 @@ ol {
 #top-logo {
   width: 90px;
   height: 90px;
-  margin: 3px 64px;
-  background: url('../img/logo_UET.png') top center / cover no-repeat;
+  margin: 3px 0px;
+  background: url('../img/logo_UET.png') top right / cover no-repeat;
   background-size: contain;
   text-indent: -9999999px;
   border: 1px solid #fff;
@@ -356,11 +356,12 @@ ol {
 /* Main content */
 .section {
   padding: 20px;
-  background-color: #0D6EFD;
-  border: 1px solid var(--boder-list-color);
-  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 8px;
   margin-left: 10px;
   width: 100%;
+  padding-bottom: 0px;
 }
 
 /* Title */
@@ -370,18 +371,16 @@ ol {
 }
 
 .section .section-title {
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
+  font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
 }
 
 
 /* Listing */
 .post-listing .post-item.vipnoibat {
-  background-color: #fff;
+  background-color: #fff9f3;
   margin-left: -20px;
   margin-right: -20px;
   display: flex;
@@ -389,9 +388,10 @@ ol {
 }
 
 .post-listing .post-item .post-place {
-  border-bottom: 1px solid var(--boder-list-color);
+  border-top: 1px solid #E13427;
   display: flex;
 }
+
 
 .post-listing .post-item .post-place:hover{
   box-shadow: 0 3px 8px var(--colorWeb-01);
