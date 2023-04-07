@@ -40,7 +40,9 @@ html {
 
 /* Common */
 .mr-4 {
-  margin-right: 4px;
+  margin-right: 6px;
+  font-size: 20px;
+  transform: translateY(20%);
 }
 
 a {

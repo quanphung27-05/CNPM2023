@@ -29,6 +29,7 @@
   padding-right: 10px;
 }
 
+
 .logo-sidebar .logo-name {
   color: #333;
   font-size: 22px;
@@ -70,7 +71,9 @@
   border-radius: 8px;
   text-decoration: none;
 }
-.lists .nav-link:hover {
+
+
+.list .nav-link:hover {
   background-color: #4070f4;
 }
 .nav-link .icon {
@@ -83,8 +86,8 @@
   color: #707070;
   font-weight: 400;
 }
-.lists .nav-link:hover .icon,
-.lists .nav-link:hover .link {
+.list .nav-link:hover .icon,
+.list .nav-link:hover .link {
   color: #fff;
 }
 .overlay {

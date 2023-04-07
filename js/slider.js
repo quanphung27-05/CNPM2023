@@ -13,7 +13,7 @@ stars.forEach((star, index1) => {
   });
 });
 
-var swiper = new Swiper(".mySwiper", {
+var swiper1 = new Swiper(".mySwiper", {
   slidesPerView: 1,
   grabCursor: true,
   loop: true,
