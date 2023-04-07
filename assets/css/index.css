@@ -713,3 +713,68 @@ footer a:hover{
 .stars i.active {
   color: #ff9c1a;
 }
+
+.modal.open{
+  pointer-events: auto;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  pointer-events: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+.modal-container{
+  background-color: #fff;
+  width: 900px;
+  min-height: 200px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.modal-header {
+  background: #0D6EFD;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  color: #fff;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px ;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  padding: 16px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button-animation {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #0D6EFD;
+  transition: all 0.25s ease;
+}
+.button-animation:active {
+  transform: scale(0.9);
+}

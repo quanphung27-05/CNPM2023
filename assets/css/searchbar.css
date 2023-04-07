@@ -14,7 +14,7 @@
 .input-box.open{
   max-width: 350px;
 }
-input{
+.input-box>input{
   position: relative;
   outline: none;
   border: none;

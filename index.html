@@ -111,11 +111,14 @@
           </li>
           <!-- Filter -->
           <div id="filter-top" class="row">
-            <div class="col btn btn-secondary rounded-pill" style="margin-top: 6px;padding-top: 8px" data-bs-toggle="collapse" data-bs-target="#filter-main">
-              <i class="ti-filter mr-4"></i> Bộ lọc
+            <div class="col">
+
+              <div class=" btn btn-secondary rounded-pill" style="margin-top: 6px ;padding-top: 8px; float: right;" data-bs-toggle="collapse" data-bs-target="#filter-main">
+                <i class="ti-filter mr-4"></i> Bộ lọc
+              </div>
             </div>
             <div class="col input-box">
-              <input type="text" placeholder="Search...">
+              <input  type="text" placeholder="Search...">
               <span class="icon-search">
                 <i class="uil uil-search search-icon"></i>
               </span>
@@ -490,11 +493,11 @@
               </button>
         
               <div class="links">
-                <a href="#" class="link active">1</a>
-                <a href="#" class="link">2</a>
-                <a href="#" class="link">3</a>
-                <a href="#" class="link">4</a>
-                <a href="#" class="link">5</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link">5</a>
               </div>
         
               <button class="button prevNext" id="next">
@@ -561,11 +564,11 @@
           <button class="button-animation js-send-info" style="margin-top: 30px;margin-bottom:35px;font-weight: 700;padding: 10px 30px">Gửi liên hệ</button>
         </section>
         <section class="report container float-left" style="width: 100%; margin-bottom: 50px;background-color: #fff;border: 7px dashed #e8eefc">
-          <section class="container-report" style="background-color: #ffff">
+          <section class="container-report" style="background-color: #ffff;margin-bottom: 15px;">
             <div class="testimonial mySwiper">
               <div class="testi-content swiper-wrapper" style="z-index:0">
                 <div class="slide swiper-slide">
-                  <img src="images/img3.jpg" alt="" class="image" />
+                  <img src="./assets/img/avatar1.jpg" alt="" class="image" />
                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, saepe provident dolorem a quaerat quo error facere nihil deleniti eligendi ipsum adipisci, fugit, architecto amet asperiores doloremque deserunt eum nemo. </p>
                   <i class="bx bxs-quote-alt-left quote-icon"></i>
                   <div class="details">
@@ -573,48 +576,46 @@
                     <span class="job">Web Developer</span>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          <h2 style="color: rgb(45, 103, 173);text-align: center;">Đánh giá của bạn</h2>
-          <div class="rating-box">
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="card" style="border: none; background-color: transparent;padding: 0 17%">
-            <form>
-              <div class="form-group">
-                <div class="input-group">
-                  <textarea class="form-control" id="comment-input" rows="6" placeholder="Nhập nội dung comment"></textarea>
-                  <div class="input-group-append">
-                    <button class="btn" id="clear-comment">
-                      <i class="ti-close"></i>
-                    </button>
+                <div class="slide swiper-slide">
+                  <img src="./assets/img/avatar2.webp" alt="" class="image" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                    saepe provident dolorem a quaerat quo error facere nihil deleniti
+                    eligendi ipsum adipisci, fugit, architecto amet asperiores
+                    doloremque deserunt eum nemo.
+                  </p>
+      
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>
+      
+                  <div class="details">
+                    <span class="name">Marnie Lotter</span>
+                    <span class="job">Web Developer</span>
                   </div>
                 </div>
+                <div class="slide swiper-slide">
+                  <img src="./assets/img/avatar3.jpeg" alt="" class="image" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                    saepe provident dolorem a quaerat quo error facere nihil deleniti
+                    eligendi ipsum adipisci, fugit, architecto amet asperiores
+                    doloremque deserunt eum nemo.
+                  </p>
+      
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>
+      
+                  <div class="details">
+                    <span class="name">Marnie Lotter</span>
+                    <span class="job">Web Developer</span>
+                  </div>
+                </div> 
+
               </div>
-              <div class="row was-validated" action="/action_page.php" style="margin-top: 5px;">
-                <div class="col-5" style="padding-right: 0px;">
-                  <input type="text" class="form-control" id="email-comment" placeholder="Email..." name="email" required>
-                  <div class="valid-feedback">Hợp lệ.</div>
-                  <div class="invalid-feedback">Vui lòng không để trống ô này.</div>
-                </div>
-                <div class="col-5" style="padding-left: 2px;padding-right: 0px;">
-                  <input type="text" class="form-control" id="name-user-comment" placeholder="Họ và tên..." name="name" required>
-                  <div class="valid-feedback">Hợp lệ.</div>
-                  <div class="invalid-feedback">Vui lòng không để trống ô này.</div>
-                </div>
-                <div class="col-2">
-                  <button type="button" class="button-animation btn-info" style="margin-left: -5px;padding-top: 6px;padding-bottom: 6px;">Xác nhận</button>
-                </div>
-              </div>
-            </form>
-          </div>
+              <div class="swiper-button-next nav-btn"></div>
+              <div class="swiper-button-prev nav-btn"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </section>
+          <button class="button-animation js-sbtn" style = "margin-bottom:35px;font-weight: 700;padding: 10px 30px;margin-left: 50%;transform: translateX(-50%);">Gửi đánh giá</button>
         </section>
       </div>
       <footer>
@@ -622,7 +623,7 @@
           <div class="left box">
             <div class="upper">
               <div class="topic">About us</div>
-              <p>Roomaate là một web giúp người dùng tìm kiếm và đặt phòng trọ và bạn trọ một cách dễ dàng. Với roomate,bạn có thể xem thông tin chi tiết về các phòng trọ, như giá cả, diện tích, địa điểm và các tiện nghi khác.</p>
+              <p>Roommate là một web giúp người dùng tìm kiếm và đặt phòng trọ và bạn trọ một cách dễ dàng. Với roomate,bạn có thể xem thông tin chi tiết về các phòng trọ, như giá cả, diện tích, địa điểm và các tiện nghi khác.</p>
             </div>
             <div class="lower">
               <div class="topic">Contact us</div>
@@ -777,6 +778,55 @@
             </div>
           </form>
           <div class="footer"> Don't worry, we don't spam </div>
+        </div>
+      </div>
+
+      <div class="modal">
+        <div class="modal-container">
+          <div class="modal-close">
+            <i class="ti-close"></i>
+          </div>
+          <header class="modal-header">
+           Đánh giá của bạn
+          </header>
+          <div class="rating-box">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="card" style="border: none; background-color: transparent;padding: 0 8%">
+            <form>
+              <div class="form-group">
+                <div class="input-group">
+                  <textarea class="form-control" id="comment-input" rows="6" placeholder="Nhập nội dung comment"></textarea>
+                  <div class="input-group-append">
+                    <button class="btn" id="clear-comment">
+                      <i class="ti-close"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row was-validated" action="/action_page.php" style="margin-top: 5px;">
+                <div class="col-5" style="padding-right: 0px;">
+                  <input type="text" class="form-control" id="email-comment" placeholder="Email..." name="email" required>
+                  <div class="valid-feedback">Hợp lệ.</div>
+                  <div class="invalid-feedback">Vui lòng không để trống ô này.</div>
+                </div>
+                <div class="col-5" style="padding-left: 2px;padding-right: 0px;">
+                  <input type="text" class="form-control" id="name-user-comment" placeholder="Họ và tên..." name="name" required>
+                  <div class="valid-feedback">Hợp lệ.</div>
+                  <div class="invalid-feedback">Vui lòng không để trống ô này.</div>
+                </div>
+                <div class="col-2">
+                  <button type="button" class="button-animation btn-info" style="margin-left: -5px;padding-top: 6px;padding-bottom: 6px;">Xác nhận</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
