@@ -18,7 +18,7 @@ var swiper1 = new Swiper(".mySwiper", {
   grabCursor: true,
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-comment",
     clickable: true,
   },
   navigation: {
