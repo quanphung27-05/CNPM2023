@@ -17,16 +17,16 @@
 }
 .logo-sidebar .menu-icon {
   color: #333;
-  font-size: 24px;
-  margin-right: 14px;
+  font-size: 20px;
+  margin-right: 12.5px;
   cursor: pointer;
 }
 
 .menu-button{
-  font-size: 30px;
+  font-size: 27px;
   color: #fff !important;
-  transform: translateY(7px);
-  padding-right: 10px;
+  transform: translateY(6.3px);
+  padding-right: 9px;
 }
 
 

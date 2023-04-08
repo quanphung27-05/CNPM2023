@@ -18,7 +18,6 @@
   box-sizing: border-box;
   outline: none;
   font-family: 'FontName', sans-serif; 
-  
 }
 
 :root {
@@ -34,14 +33,14 @@ body {
   position: relative;
 }
 html {
-  font-size: 14px;
+  font-size: 12.8px;
   
 }
 
 /* Common */
 .mr-4 {
-  margin-right: 6px;
-  font-size: 20px;
+  margin-right: 5px;
+  font-size: 18px;
   transform: translateY(20%);
 }
 
@@ -130,19 +129,19 @@ ol {
 }
 
 #top-logo {
-  width: 90px;
-  height: 90px;
-  margin: 3px 0px;
+  width: 81px;
+  height: 81px;
+  margin: 2.7px 0px;
   background: url('../img/logo_UET.png') top right / cover no-repeat;
   background-size: contain;
   text-indent: -9999999px;
   border: 1px solid #fff;
-  border-radius: 45px;
+  border-radius: 40px;
   background-color: #fff;
   display: block;
   float: left;
   cursor: pointer;
-  box-shadow: 0 0 10px rgb(255, 255, 255);
+  box-shadow: 0 0 9px rgb(255, 255, 255);
 }
 
 .btn-rad{
@@ -151,8 +150,8 @@ ol {
 
 .header-btn{
   color: #000;
-  padding:13px 16px;
-  margin-top: 30px;
+  padding:12px 14px;
+  margin-top: 27px;
 }
 
 .header-btn:hover{
@@ -164,7 +163,7 @@ ol {
 
 .header-add-post{
   color: #000;
-  padding:13px 16px;
+  padding:12px 14px;
   margin-top: 30px;
   border-radius: 8px;
   color: #fff;
@@ -177,7 +176,7 @@ ol {
 
 .user-welcome {
   float: right;
-  margin: 0 32px;
+  margin: 0 29px;
   display: flex;
   align-items: center;
 }
@@ -204,7 +203,7 @@ ol {
   text-decoration: none;
   display: inline-block;
   line-height: 46px;
-  padding: 0px 24px;
+  padding: 0px 22px;
 }
 
 .menu-button:hover{
@@ -226,19 +225,19 @@ ol {
 /* Filter */
 #filter-top {
   float: right;
-  margin-right: 72px;
+  margin-right: 65px;
 }
 
 #filter-top .submit {
  
-  padding: 0px 24px;
-  margin: 5px 0px;
+  padding: 0px 22px;
+  margin: 4.5px 0px;
   
 }
 
 #filter-main > .filter-list{
-  margin-left: 120px;
-  margin-right: -200px;
+  margin-left: 108px;
+  margin-right: -180px;
 }
 
 #filter-main > .filter-list> .filter-item{
