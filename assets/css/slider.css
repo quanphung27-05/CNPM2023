@@ -100,7 +100,7 @@
     border-radius: 8px;
   }
   .card .image-box {
-    height: 200px;
+    height: 180px;
   }
   .card .image-box img {
     width: 100%;
@@ -110,34 +110,34 @@
   .card .profile-details {
     display: flex;
     align-items: center;
-    column-gap: 12px;
-    padding: 15px;
+    column-gap: 11px;
+    padding: 14px;
   }
   .card .profile-details img {
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
     border-radius: 50%;
   }
   .profile-details .name {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
   }
   .profile-details .job {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     color: #4d4d4d;
   }
   
   .swiper-navBtn {
     color: #000;
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
     background: #fff;
     border-radius: 50%;
   }
   .swiper-navBtn::before,
   .swiper-navBtn::after {
-    font-size: 18px;
+    font-size: 16px;
   }
   
   .swiper-pagination-bullet {
