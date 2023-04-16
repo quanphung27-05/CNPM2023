@@ -49,15 +49,13 @@
         <!-- Begin: Nav -->
         <ul id="nav" class="light-blue">
           <li>
-            <div class="menu-button">
-              <i class="bx bx-menu menu-icon outline-icon"></i>
-            </div>
+            <i class="bx bx-menu menu-icon outline-icon menu-button"></i>
           </li>
-          <li>
+          <li class="header-nav-item">
             <a href="#">Trang chủ</a>
           </li>
-          <li>
-            <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown"> Hoạt động </a>
+          <li class="header-nav-item">
+            <a type="button" class="dropdown-toggle " data-bs-toggle="dropdown"> Hoạt động </a>
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-item" href="#">Cho thuê phòng trọ</a>
@@ -76,7 +74,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="header-nav-item">
             <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown"> Hỗ trợ </a>
             <ul class="dropdown-menu">
               <li>
@@ -87,7 +85,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="header-nav-item">
             <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown"> Điều hướng </a>
             <ul class="dropdown-menu" style="color: #000">
               <li class="nav-item">
@@ -104,16 +102,11 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="header-nav-item">
             <a href="aboutUs.html">ABOUT US</a>
           </li>
           <!-- Filter -->
           <div id="filter-top" class="row">
-            <div class="col">
-              <div class=" btn btn-secondary rounded-pill" style="margin-top: 6px ;padding-top: 8px; float: right;" data-bs-toggle="collapse" data-bs-target="#filter-main">
-                <i class="ti-filter" style="margin-right: 4px;"></i> Bộ lọc
-              </div>
-            </div>
             <div class="col input-box">
               <input type="text" placeholder="Search...">
               <span class="icon-search">
@@ -123,103 +116,6 @@
             </div>
           </div>
         </ul>
-        <div id="filter-main" class="collapse">
-          <div class="row filter-list">
-            <div class="col filter-item">
-              <select class="form-select form-select-lg">
-                <option value="">-- Chọn Tỉnh/TP --</option>
-                <option value="90">Hồ Chí Minh</option>
-                <option value="41">Hà Nội</option>
-                <option value="72">Đà Nẵng</option>
-                <option value="87">Bình Dương</option>
-                <option value="88">Đồng Nai</option>
-                <option value="89">Bà Rịa - Vũng Tàu</option>
-                <option value="99">Cần Thơ</option>
-                <option value="77">Khánh Hòa</option>
-                <option value="60">Hải Phòng</option>
-                <option value="97">An Giang</option>
-                <option value="55">Bắc Giang</option>
-                <option value="44">Bắc Kạn</option>
-                <option value="102">Bạc Liêu</option>
-                <option value="58">Bắc Ninh</option>
-                <option value="93">Bến Tre</option>
-                <option value="85">Bình Phước</option>
-                <option value="79">Bình Thuận</option>
-                <option value="75">Bình Định</option>
-                <option value="103">Cà Mau</option>
-                <option value="43">Cao Bằng</option>
-                <option value="81">Gia Lai</option>
-                <option value="42">Hà Giang</option>
-                <option value="63">Hà Nam</option>
-                <option value="68">Hà Tĩnh</option>
-                <option value="59">Hải Dương</option>
-                <option value="100">Hậu Giang</option>
-                <option value="51">Hòa Bình</option>
-                <option value="61">Hưng Yên</option>
-                <option value="98">Kiên Giang</option>
-                <option value="80">Kon Tum</option>
-                <option value="48">Lai Châu</option>
-                <option value="84">Lâm Đồng</option>
-                <option value="53">Lạng Sơn</option>
-                <option value="46">Lào Cai</option>
-                <option value="91">Long An</option>
-                <option value="64">Nam Định</option>
-                <option value="67">Nghệ An</option>
-                <option value="65">Ninh Bình</option>
-                <option value="78">Ninh Thuận</option>
-                <option value="56">Phú Thọ</option>
-                <option value="76">Phú Yên</option>
-                <option value="69">Quảng Bình</option>
-                <option value="73">Quảng Nam</option>
-                <option value="74">Quảng Ngãi</option>
-                <option value="54">Quảng Ninh</option>
-                <option value="70">Quảng Trị</option>
-                <option value="101">Sóc Trăng</option>
-                <option value="49">Sơn La</option>
-                <option value="86">Tây Ninh</option>
-                <option value="62">Thái Bình</option>
-                <option value="52">Thái Nguyên</option>
-                <option value="66">Thanh Hóa</option>
-                <option value="71">Thừa Thiên Huế</option>
-                <option value="92">Tiền Giang</option>
-                <option value="94">Trà Vinh</option>
-                <option value="45">Tuyên Quang</option>
-                <option value="95">Vĩnh Long</option>
-                <option value="57">Vĩnh Phúc</option>
-                <option value="50">Yên Bái</option>
-                <option value="82">Đắk Lắk</option>
-                <option value="83">Đắk Nông</option>
-                <option value="47">Điện Biên</option>
-                <option value="96">Đồng Tháp</option>
-              </select>
-            </div>
-            <div class="col filter-item">
-              <select class="form-select form-select-lg">
-                <option>Diện tích</option>
-                <option>Dưới 20 mét vuông</option>
-                <option>20 mét vuông - 30 mét vuông</option>
-                <option>30 mét vuông - 40 mét vuông</option>
-                <option>Trên 40 mét vuông</option>
-              </select>
-            </div>
-            <div class="col filter-item">
-              <select class="form-select form-select-lg">
-                <option>Dưới 1 triệu</option>
-                <option>1 triệu - 2 triệu</option>
-                <option>2 triệu - 3 triệu</option>
-                <option>3 triệu - 4 triệu</option>
-                <option>4 triệu - 5 triệu</option>
-                <option>5 triệu - 6 triệu</option>
-                <option>Trên 6 triệu</option>
-              </select>
-            </div>
-            <div class="col submit-filter">
-              <div class="btn btn-secondary btn-filter">
-                <p style="padding-top: 4px">Xác nhận</p>
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- End: Nav -->
       </div>
       <!-- End: Header -->
@@ -285,45 +181,6 @@
         </section>
         <section class="e-column" id="section2">
           <!-- Begin: Left sidebar -->
-          <div class="column-md-1-5">
-            <div class="menu-navigation">
-              <div class="vertical-nav-header light-red">
-                <span>Danh mục</span>
-              </div>
-              <ul class="u-vertial" style="padding-left: 0px;">
-                <li>
-                  <a href="#">
-                    <i class="ti-angle-double-right mr-4"></i>
-                    <span class="">Tìm phòng trọ</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="ti-angle-double-right mr-4"></i>
-                    <span class="">Tìm nhà trọ</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="ti-angle-double-right mr-4"></i>
-                    <span class="">Tìm người ở ghép</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="ti-angle-double-right mr-4"></i>
-                    <span class="">Tìm nhà thuê nguyên căn</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="ti-angle-double-right mr-4"></i>
-                    <span class="">Tìm mặt bằng cho thuê</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
           <!-- End: Left sidebar -->
           <!-- Begin: Main content -->
           <div class="column-md-3-5">
@@ -334,147 +191,81 @@
               </div>
               <!-- Sort -->
               <div class="post-listing">
-                <div class="post-item clearfix vipnoibat">
-                  <div class="post-place">
-                    <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
-                    <div class="post-meta">
-                      <h2 class="post-title">
-                        <a style="color: #000" href="#">Phòng trọ Thành Thái</a>
-                      </h2>
-                      <div class="meta-row clearfix">
-                        <span class="post-price">5 triệu/tháng</span>
-                        <span class="post-acreage">25m²</span>
-                        <span class="post-location">
-                          <a style="color: #000" href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
-                        </span>
-                        <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
-                        <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
-                        <div class="post-author">
-                          <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="">
-                          <span class="">phungquan2003</span>
+                <div class="post-item clearfix">
+                  <div class="info-img">
+                    <div class="mainimg">
+                      <img src="./assets/img/room1-1.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="sideimg">
+                      <img src="./assets/img/room1-2.jpg" alt="" width="100%" height="100%" style="width: 100%;">
+                      <div class="img-child row" style="margin:0px !important">
+                        <div class="col" style="padding: 0px !important; height: 100%;width: 100%;">
+                          <img src="./assets/img/room1-3.jpg" alt="">
                         </div>
-                        <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
+                        <div class="col" style="padding: 0px !important;height: 100%;width: 100%;">
+                          <img src="./assets/img/room1-4.jpg" alt="">
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="post-item clearfix vipnoibat">
-                  <div class="post-place ">
-                    <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
-                    <div class="post-meta">
-                      <h2 class="post-title">
-                        <a style="color: #000" href="#">Phòng trọ Thành Thái</a>
-                      </h2>
-                      <div class="meta-row clearfix">
-                        <span class="post-price">5 triệu/tháng</span>
-                        <span class="post-acreage">25m²</span>
-                        <span class="post-location">
-                          <a style="color: #000" href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
-                        </span>
-                        <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
-                        <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
-                        <div class="post-author">
-                          <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="">
-                          <span class="">phungquan2003</span>
-                        </div>
-                        <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
+                  <div class="post-meta">
+                    <h2 class="post-title">
+                      <a style="font-size: 14px;line-height: 20px;letter-spacing: -.2px;color: #2C2C2C;text-transform: uppercase;font-weight: 700;" href="#">Phòng trọ Thành Thái</a>
+                    </h2>
+                    <div class="meta-row clearfix">
+                      <span class="post-price">5 triệu/tháng</span>
+                      <span class="post-acreage">25m²</span>
+                      <span class="post-location">
+                        <a style="color: #000" href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
+                      </span>
+                      <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
+                      <p class="post-summary">Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
+                    </div>
+                    <div class="contact-info">
+                      <div class="post-author">
+                        <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="">
+                        <span class="">phungquan2003</span>
                       </div>
+                      <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
                     </div>
                   </div>
                 </div>
-                <div class="post-item clearfix vipnoibat">
-                  <div class="post-place">
-                    <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
-                    <div class="post-meta">
-                      <h2 class="post-title">
-                        <a style="color: #000" href="#">Phòng trọ Thành Thái</a>
-                      </h2>
-                      <div class="meta-row clearfix">
-                        <span class="post-price">5 triệu/tháng</span>
-                        <span class="post-acreage">25m²</span>
-                        <span class="post-location">
-                          <a style="color: #000" href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
-                        </span>
-                        <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
-                        <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
-                        <div class="post-author">
-                          <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="">
-                          <span class="">phungquan2003</span>
+                <div class="post-item clearfix">
+                  <div class="info-img">
+                    <div class="mainimg">
+                      <img src="./assets/img/slider/slider1.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="sideimg">
+                      <img src="./assets/img/slider/slider1.jpg" alt="" width="100%" height="100%" style="width: 100%;">
+                      <div class="img-child row" style="margin:0px !important">
+                        <div class="col" style="padding: 0px !important">
+                          <img src="./assets/img/slider/slider1.jpg" alt="">
                         </div>
-                        <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
+                        <div class="col" style="padding: 0px !important">
+                          <img src="./assets/img/slider/slider1.jpg" alt="">
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="post-item clearfix vipnoibat">
-                  <div class="post-place">
-                    <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
-                    <div class="post-meta">
-                      <h2 class="post-title">
-                        <a style="color: #000" href="#">Phòng trọ Thành Thái</a>
-                      </h2>
-                      <div class="meta-row clearfix">
-                        <span class="post-price">5 triệu/tháng</span>
-                        <span class="post-acreage">25m²</span>
-                        <span class="post-location">
-                          <a style="color: #000" href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
-                        </span>
-                        <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
-                        <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
-                        <div class="post-author">
-                          <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="">
-                          <span class="">phungquan2003</span>
-                        </div>
-                        <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
-                      </div>
+                  <div class="post-meta">
+                    <h2 class="post-title">
+                      <a style="font-size: 14px;line-height: 20px;letter-spacing: -.2px;color: #2C2C2C;text-transform: uppercase;font-weight: 700;" href="#">Phòng trọ Thành Thái</a>
+                    </h2>
+                    <div class="meta-row clearfix">
+                      <span class="post-price">5 triệu/tháng</span>
+                      <span class="post-acreage">25m²</span>
+                      <span class="post-location">
+                        <a style="color: #000" href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
+                      </span>
+                      <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
+                      <p class="post-summary">Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
                     </div>
-                  </div>
-                </div>
-                <div class="post-item clearfix vipnoibat">
-                  <div class="post-place">
-                    <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
-                    <div class="post-meta">
-                      <h2 class="post-title">
-                        <a style="color: #000" href="#">Phòng trọ Thành Thái</a>
-                      </h2>
-                      <div class="meta-row clearfix">
-                        <span class="post-price">5 triệu/tháng</span>
-                        <span class="post-acreage">25m²</span>
-                        <span class="post-location">
-                          <a style="color: #000" href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
-                        </span>
-                        <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
-                        <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
-                        <div class="post-author">
-                          <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="">
-                          <span class="">phungquan2003</span>
-                        </div>
-                        <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
+                    <div class="contact-info">
+                      <div class="post-author">
+                        <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="">
+                        <span class="">phungquan2003</span>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="post-item clearfix vipnoibat">
-                  <div class="post-place">
-                    <img src="./assets/img/slider/slider1.jpg" alt="" class="image">
-                    <div class="post-meta">
-                      <h2 class="post-title">
-                        <a style="color: #000" href="#">Phòng trọ Thành Thái</a>
-                      </h2>
-                      <div class="meta-row clearfix">
-                        <span class="post-price">5 triệu/tháng</span>
-                        <span class="post-acreage">25m²</span>
-                        <span class="post-location">
-                          <a style="color: #000" href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
-                        </span>
-                        <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
-                        <p class="post-summary">- Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
-                        <div class="post-author">
-                          <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="">
-                          <span class="">phungquan2003</span>
-                        </div>
-                        <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
-                      </div>
+                      <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
                     </div>
                   </div>
                 </div>
@@ -502,6 +293,82 @@
                 <i class="fa-solid fa-angles-right"></i>
               </button>
             </div>
+          </div>
+          <div id="column-mr-1-5">
+            <div class="cost-filter">
+              <p>Lọc theo khoảng giá</p>
+              <div class="cost-filter-content">
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Dưới 1 triệu </a>
+                </div>
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Từ 1 triệu - 2 triệu </a>
+                </div>
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Từ 2 triệu - 3 triệu </a>
+                </div>
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Từ 3 triệu - 5 triệu </a>
+                </div>
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Từ 5 triệu - 8 triệu </a>
+                </div>
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Từ 8 triệu - 12 triệu </a>
+                </div>
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Trên 12 triệu </a>
+                </div>
+              </div>
+            </div>
+            <div class="cost-filter">
+              <p>Lọc theo diện tích</p>
+              <div class="cost-filter-content">
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Dưới 30 m <sup>2</sup>
+                  </a>
+                </div>
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Từ 30 - 50m <sup>2</sup>
+                  </a>
+                </div>
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Từ 50 - 80m <sup>2</sup>
+                  </a>
+                </div>
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Từ 80 - 120m <sup>2</sup>
+                  </a>
+                </div>
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Từ 120 - 160m <sup>2</sup>
+                  </a>
+                </div>
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Từ 160 - 200m <sup>2</sup>
+                  </a>
+                </div>
+                <div class="cost-filter-item">
+                  <a href="#" class="">
+                    <i class='bx bxs-chevrons-right'></i>Trên 200m <sup>2</sup>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="intro" id="section3">
           <div class="review container border border-5">
@@ -556,7 +423,6 @@
               <h3 style="color: #233762;font-size: 1.5rem;font-weight: 700;margin: 5px 0;">Zalo:0911953124</h3>
             </div>
           </div>
-          <button class="button-animation js-send-info" style="margin-top: 30px;margin-bottom:35px;font-weight: 700;padding: 10px 30px">Gửi liên hệ</button>
         </section>
         <section class="report container float-left" style="width: 100%; margin-bottom: 50px;background-color: #fff;border: 7px dashed #e8eefc">
           <section class="container-report" style="background-color: #ffff;margin-bottom: 15px;">

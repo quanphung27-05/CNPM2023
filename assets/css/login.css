@@ -1,8 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
+@font-face {
+  font-family: "FontName";
+  src: url("./SVN-Poppins.ttf");
+}
+/* Reset CSS */
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'FontName', sans-serif; 
+  outline: none;
 }
-
 body {
   font-family: "Nunito", sans-serif;
   color: rgba(0, 0, 0, 0.7);
@@ -262,50 +269,132 @@ body {
   fill: currentColor;
 }
 
-.card {
-  width: 350px;
-  height: 254px;
-  border-radius: 4px;
-  background: transparent;
-  display: flex;
-  gap: 5px;
-  padding: .4em;
-}
 
-.card p {
-  height: 100%;
-  flex: 1;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 2px;
-  transition: all .5s;
-  background: #fff;
-  border: 1px solid #ff5a91;
-  display: flex;
-  justify-content: center;
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #0D6EFD;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+ 
+
+ .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #fff;
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #fff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #0D6EFD;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+ }
+
+ .card {
+  position: relative;
+  width: 160px;
+  height:240px;
+  background: mediumturquoise;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  
 }
 
-.card p:hover {
-  flex: 4;
+.bx{
+  font-size: 50px;
 }
 
-.card p span {
-  min-width: 14em;
-  padding: .5em;
-  text-align: center;
-  transform: rotate(-90deg);
-  transition: all .5s;
-  text-transform: uppercase;
-  color: #ff568e;
-  letter-spacing: .1em;
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.5s;
 }
 
-.card p:hover span {
-  transform: rotate(0);
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
 }
 
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
 
+.card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card.card-2:hover:after {
+  content: "Fast";
+}
+
+.card.card-1:hover:after {
+  content: "Security";
+}
+.card.card-3:hover:after {
+  content: "Excellent";
+}
+
+ 
 @media (max-width: 750px) {
   .modal-container {
     width: 90%;
