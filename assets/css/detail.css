@@ -1,0 +1,225 @@
+.section {
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.aside-content{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 160px;
+
+}
+.room-content{
+    display: inline-block;
+    width: 728px;
+}
+#demo.carousel{
+    height: 317px;
+    width: 100%;
+    z-index: 0;
+    display:inline-flex ;
+    margin-top: 160px;
+    background-color: #000;
+    vertical-align: top;
+    justify-content: center;
+}
+
+.carousel-inner .carousel-item {
+    height: 400px;
+}
+.carousel-item img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.user-detail{
+    
+    
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 16px;
+    
+    width: 260px;
+    background-color: #fff;
+    margin-left:15px;
+}
+
+.user-detail div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.user-ava{
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal !important;
+    letter-spacing: -.2px;
+    color: #74150F;
+    background-color: #FFECEB;
+    text-align: center;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+    margin-top: 8px;
+    text-transform: uppercase;
+    align-items: center;
+}
+.postBy_item{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal !important;
+    color: #999;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: -4px;
+    text-align: center;
+}
+.name-user{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal !important;
+    letter-spacing: -.2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin-top: 8px;
+}
+.see-profile{
+    margin-top: 24px;
+    width: 100%;
+    display: inline-block;
+    color: #fff;
+    background: #009BA1;
+    border: 1px solid #009BA1;
+    font-family: "Lexend Medium",Roboto,Arial !important;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal !important;
+    letter-spacing: -.2px;
+    padding: 13px 15px;
+    border-radius: 8px;
+    font-style: normal;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: none !important;
+}
+.see-profile:hover{
+    color: #fff;
+    background: #1DBABF;
+    border: 1px solid #1DBABF;
+}
+.contact-detail{
+    margin-top: 8px;
+    width: 100%;
+    display: inline-block;
+    color: #2C2C2C;
+    background: #fff;
+    border: solid 1px #ccc;
+    font-family: "Lexend Medium",Roboto,Arial !important;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal !important;
+    letter-spacing: -.2px;
+    padding: 13px 15px;
+    border-radius: 8px;
+    font-style: normal;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: none !important;
+}
+.contact-detail:hover{
+    color: #2C2C2C;
+    background: #ccc;
+    border: solid 1px #ccc;
+}
+.detail-content{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: normal !important;
+    letter-spacing: -0.2px;
+    color: #2C2C2C;
+    display: block;
+}
+.head-detail{
+    padding-bottom: 15px;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.post-address{
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+.post-attributes{
+    display: flex;
+}
+.post-attributes .item{
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    margin-right: 15%;
+    text-align: center;
+}
+.post-contact,
+.post-overview,
+.post-main-content{
+    padding: 15px;
+    margin-left: 0px;
+}
+table tr:nth-of-type(even) {
+    background-color: #f5f5f5;
+}
+
+.like-post-list{
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    margin-left: 15px;
+}
+.section-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.like-post-item{
+    padding: 10px 0;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #eee;
+}
+.like-post-item a{
+    display: flex;
+}
+ ul.like-listing{
+    padding-left: 0px;
+ }
+ .post-list-price{
+    color: #000;
+ }
+ .post-meta{
+    display: block;
+    margin-left: 10px;
+    width: 220px;
+    align-items: center;
+    margin-top: 5px;
+ }

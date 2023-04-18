@@ -22,9 +22,6 @@
   cursor: pointer;
 }
 
-
-
-
 .logo-sidebar .logo-name {
   color: #333;
   font-size: 22px;
@@ -78,9 +75,9 @@
   color: #707070;
 }
 .nav-link .link {
-  font-size: 16px;
-  color: #707070;
-  font-weight: 400;
+  font-size: 14px;
+  color: rgb(112, 112, 112);
+  font-weight: 300;
 }
 .list .nav-link:hover .icon,
 .list .nav-link:hover .link {
