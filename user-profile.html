@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/user-detail.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/pagination.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+   <header>
+    <ul id="nav" class="light-blue">
+        <li>
+          <a href="#">Trang chủ</a>
+        </li>
+        <li>
+          <a href="#">BLOG</a>
+        </li>
+        <li>
+          <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown"> Hoạt động </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Cho thuê phòng trọ</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Nhà cho thuê</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Cho thuê căn hộ</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Tìm người ở ghép</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown"> Hỗ trợ </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Nạp tiền</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Bảng giá</a>
+            </li>
+          </ul>
+        </li>
+
+    </ul>
+   </header> 
+   <main >
+    <div class="content" style="margin: 0 15%">
+        <div class="user-bg">
+          <img src="./assets/img/background-user.jpg" alt="" width="100%" height="100%" style="border-radius: 30px;">
+        </div>
+        <div class="head-user">
+            <div class="ava-detail">
+                <img src="./assets/img/avatar1.jpg" alt="" height="100%" width="100%" style="border-radius: 50%;">
+            </div>
+            <div class="user-info-profile">
+                <h1 class="user-name">Quân Phùng</h1>
+                <h5 class="user-follow" style="margin-left:10px">52K followers</h5>
+            </div>
+            <div class="func-btn">
+              <button class="flw-btn">Follow</button>
+              <button class="sp-btn">Tư vấn</button>
+            </div>
+        </div>
+        <div class="user-content-post">
+          <div class="side-infomation">
+            <div class="side-title">
+              <h3>Giới thiệu</h3>
+            </div>
+            <ul class="info-user-list">
+              <li class="info-items">Họ và Tên: Phùng Lê Anh Quân</li>
+              <li class="info-items">Ngày sinh: 27/05/2003</li>
+              <li class="info-items">Giới tính: Nam</li>
+              <li class="info-items">Nghề nghiệp: Sinh viên</li>
+              <li class="info-items"><a href="profile.html">Chỉnh sửa thông tin chi tiết</a></li>
+            </ul>
+          </div>
+          <div class="main-post-list">
+            <div class="section">
+              <!-- Title -->
+              <div class="section-header" style="background-color: transparent;box-shadow: none;border-bottom:solid 2px #ccc ;margin-bottom: 10px;">
+                <span class="section-title" style="font-size: 25px;">Danh sách tin của bạn</span>
+              </div>
+              <!-- Sort -->
+              <div class="post-listing">
+                <div class="post-item clearfix">
+                  <div class="info-img">
+                    <div class="mainimg">
+                      <img src="./assets/img/room1-1.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="sideimg">
+                      <img src="./assets/img/room1-2.jpg" alt="" width="100%" height="100%" style="width: 100%;">
+                      <div class="img-child row" style="margin:0px !important">
+                        <div class="col" style="padding: 0px !important; height: 100%;width: 100%;">
+                          <img src="./assets/img/room1-3.jpg" alt="">
+                        </div>
+                        <div class="col" style="padding: 0px !important;height: 100%;width: 100%;">
+                          <img src="./assets/img/room1-4.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post-meta">
+                    <h2 class="post-title">
+                      <a style="font-size: 14px;line-height: 20px;letter-spacing: -.2px;color: #2C2C2C;text-transform: uppercase;font-weight: 700;" href="#">Phòng trọ Thành Thái</a>
+                    </h2>
+                    <div class="meta-row clearfix">
+                      <span class="post-price">5 triệu/tháng</span>
+                      <span class="post-acreage">25m²</span>
+                      <span class="post-location">
+                        <a style="color: #000" href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
+                      </span>
+                      <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
+                      <p class="post-summary">Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
+                    </div>
+                    <div class="contact-info">
+                      <div class="post-author">
+                        <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="">
+                        <span class="">phungquan2003</span>
+                      </div>
+                      <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-item clearfix">
+                  <div class="info-img">
+                    <div class="mainimg">
+                      <img src="./assets/img/slider/slider1.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="sideimg">
+                      <img src="./assets/img/slider/slider1.jpg" alt="" width="100%" height="100%" style="width: 100%;">
+                      <div class="img-child row" style="margin:0px !important">
+                        <div class="col" style="padding: 0px !important">
+                          <img src="./assets/img/slider/slider1.jpg" alt="">
+                        </div>
+                        <div class="col" style="padding: 0px !important">
+                          <img src="./assets/img/slider/slider1.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post-meta">
+                    <h2 class="post-title">
+                      <a style="font-size: 14px;line-height: 20px;letter-spacing: -.2px;color: #2C2C2C;text-transform: uppercase;font-weight: 700;" href="#">Phòng trọ Thành Thái</a>
+                    </h2>
+                    <div class="meta-row clearfix">
+                      <span class="post-price">5 triệu/tháng</span>
+                      <span class="post-acreage">25m²</span>
+                      <span class="post-location">
+                        <a style="color: #000" href="#">Quận Phú Nhuận, Hồ Chí Minh</a>
+                      </span>
+                      <time class="post-time" title="Chủ Nhật, 15:59 12/03/2023">Hôm nay</time>
+                      <p class="post-summary">Phòng đẹp nằm ngay trung tâm quận Phú Nhuận (xem hình thật). View trước là đối diện Khách Sạn 3* Tân Sơn Nhất, View sau là đường Nguyễn Văn Trỗi.</p>
+                    </div>
+                    <div class="contact-info">
+                      <div class="post-author">
+                        <img src="./assets/img/slider/slider1.jpg" alt="member-item" class="">
+                        <span class="">phungquan2003</span>
+                      </div>
+                      <a rel="nofollow" href="#" class="btn-quick-zalo">Nhắn Zalo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End: Main content -->
+            <div class="pagination">
+              <button class="button" id="startBtn" disabled>
+                <i class="fa-solid fa-angles-left"></i>
+              </button>
+              <button class="button prevNext" id="prev" disabled>
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <div class="links">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link">5</a>
+              </div>
+              <button class="button prevNext" id="next">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <button class="button" id="endBtn">
+                <i class="fa-solid fa-angles-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+   </main>
+   <footer>
+    <div class="content">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic">About us</div>
+          <p>Roommate là một web giúp người dùng tìm kiếm và đặt phòng trọ và bạn trọ một cách dễ dàng. Với roomate,bạn có thể xem thông tin chi tiết về các phòng trọ, như giá cả, diện tích, địa điểm và các tiện nghi khác.</p>
+        </div>
+        <div class="lower">
+          <div class="topic">Contact us</div>
+          <div class="phone">
+            <a href="#">
+              <i class="fas fa-phone-volume"></i>0843325687 </a>
+          </div>
+          <div class="email">
+            <a href="#">
+              <i class="fas fa-envelope"></i>phungquan27052003@gmail.com </a>
+          </div>
+        </div>
+      </div>
+      <div class="middle box">
+        <div class="topic">Our Services</div>
+        <div>
+          <a href="#">Trang chủ</a>
+        </div>
+        <div>
+          <a href="#">Hỗ trợ người dùng </a>
+        </div>
+        <div>
+          <a href="#">Câu hỏi thường gặp</a>
+        </div>
+        <div>
+          <a href="#">Chính sách và điều khoản</a>
+        </div>
+        <div>
+          <a href="#">Quy định đăng tin</a>
+        </div>
+        <div>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+      <div class="right box">
+        <div class="topic">Subscribe us</div>
+        <form action="#">
+          <input type="text" placeholder="Enter email address">
+          <input type="submit" name="" value="Send">
+          <div class="media-icons">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <p>Copyright &#169; 2023 <a href="#">QuanPhung</a> All rights reserved </p>
+    </div>
+  </footer>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/profile.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>

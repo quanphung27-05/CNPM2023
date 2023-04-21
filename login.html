@@ -5,27 +5,58 @@
   <title>CodePen - login modal</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-<link rel="stylesheet" href="./assets/css/login.css">
-
+  <link rel="stylesheet" href="./assets/css/login.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
 </head>
 <body>
 <!-- partial:index.partial.html -->
 
 <div class="container">
-  <h1>Roommate.vn - Kiếm phòng trọ qua mạng xã hội</h1>
-  <div class="logo-web"><img src="./assets/img/logo_uet.png" alt="Logo-web"></div>
-  <div class="intro">
-    <p style="font-size: 22px;font-weight: 700">Roommate.vn là gì?</p>
-    <p style="margin-top: 5px;margin-bottom: 15px">Roommate là một web giúp người dùng tìm kiếm 
-      và đặt phòng trọ và bạn trọ một cách dễ dàng. 
-      Với roomate, bạn có thể xem thông tin chi tiết về các phòng trọ, 
-      như giá cả, diện tích, địa điểm và các tiện nghi khác.</p>
-    <p style="font-size: 22px;font-weight: 700">Làm sao để thuê phòng?</p>
-    <p style="margin-top: 5px;margin-bottom: 15px">Rất đơn giản! Bạn chỉ cần một chiếc điện thoại, laptop, desktop,... có kết nối internet là bạn có thể sử dụng trang web của chúng tôi để tìm cho mình một phòng hoặc một người ở cùng vừa ý rồi</p>
-    <p style="font-size: 22px;font-weight: 700; margin-bottom:20px">Tại sao bạn nên chọn roommate để tìm phòng?</p>
-    <div class="card card-1"><i class='bx bx-shield-quarter' ></i></div>
-    <div class="card card-2"><i class='bx bx-bolt-circle' ></i></div>
-    <div class="card card-3"><i class='bx bx-badge-check'></i></div>
+  <div class="blog-slider">
+    <div class="blog-slider__wrp swiper-wrapper">
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          
+          <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">26 December 2019</span>
+          <div class="blog-slider__title">Roommate.vn là gì?</div>
+          <div class="blog-slider__text">Roommate là một web giúp người dùng tìm kiếm 
+            và đặt phòng trọ và bạn trọ một cách dễ dàng. 
+            Với roomate, bạn có thể xem thông tin chi tiết về các phòng trọ, 
+            như giá cả, diện tích, địa điểm và các tiện nghi khác.</div>
+          <a href="#" class="blog-slider__button">READ MORE</a>
+        </div>
+      </div>
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">26 December 2019</span>
+          <div class="blog-slider__title">Làm sao để thuê phòng trên roommate?</div>
+          <div class="blog-slider__text">Rất đơn giản! Bạn chỉ cần một chiếc điện thoại, laptop, desktop,... có kết nối internet là bạn có thể sử dụng trang web của chúng tôi để tìm cho mình một phòng hoặc một người ở cùng vừa ý rồi</div>
+          <a href="#" class="blog-slider__button">READ MORE</a>
+        </div>
+      </div>
+      
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">26 December 2019</span>
+          <div class="blog-slider__title">Tại sao bạn nên sử dụng dịch vụ của chúng tôi?</div>
+          <div class="blog-slider__text">Roommate thuộc top những trang web cho thuê phòng tốt nhất VN.
+          Chúng tôi làm việc theo phương châm "Tìm kiếm phòng trọ dễ dàng - Ưu đãi hấp dẫn - Trải nghiệm thuận tiện"
+          </div>
+          <a href="#" class="blog-slider__button">READ MORE</a>
+        </div>
+      </div>
+      
+    </div>
+    <div class="blog-slider__pagination"></div>
   </div>
 </div>
 <div class="modal-login">
@@ -66,7 +97,9 @@
 </div>
 
 <!-- partial -->
-  <script  src="../js/login.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+<script  src="../js/login.js"></script>
 
 </body>
 </html>
