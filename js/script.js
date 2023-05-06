@@ -57,10 +57,11 @@ let inputBox = document.querySelector(".input-box"),
 
             searchIcon.addEventListener("click", () => inputBox.classList.add("open"));
             closeIcon.addEventListener("click", () => inputBox.classList.remove("open"));
+
             const startBtn = document.querySelector("#startBtn"),
             endBtn = document.querySelector("#endBtn"),
             prevNext = document.querySelectorAll(".prevNext"),
-            numbers = document.querySelectorAll(".link");
+            numbers = document.querySelectorAll(".page-link");
           
           // Setting an initial step
           let currentStep = 0;
